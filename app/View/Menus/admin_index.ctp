@@ -36,8 +36,8 @@
 						<td><?php echo h($menu['Menu']['slug']); ?>&nbsp;</td>
 						<td><?php echo h($menu['Menu']['alias']); ?>&nbsp;</td>
 						<td><?php echo h($menu['Menu']['controller']); ?>&nbsp;</td>
-						<td><?php  echo $this->Time->format($user['User']['created'], '%A %e %B, %Y'); ?>&nbsp;</td>
-						<td><?php  echo $this->Time->format($user['User']['modified'], '%A %e %B, %Y'); ?>&nbsp;</td>
+						<td><?php  echo $this->Time->format($menu['Menu']['created'], '%A %e %B, %Y'); ?>&nbsp;</td>
+						<td><?php  echo $this->Time->format($menu['Menu']['modified'], '%A %e %B, %Y'); ?>&nbsp;</td>
 						<td><?php echo $this->Html->link($menu['User']['username'],
 									array('controller' => 'users', 'action' => 'view', $menu['User']['id'])); ?></td>
 						<td><?php if($menu['Menu'][ 'online' ] == 0) {

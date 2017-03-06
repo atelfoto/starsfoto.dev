@@ -186,7 +186,7 @@ span.text-danger{
 			<strong>Copyright &copy; 2007-<?php echo date('Y'); ?> <a href=""><?php echo env('HTTP_HOST'); ?></a>.</strong> All rights reserved.
 		</footer>
 	</div>
-	<?php echo  $this->Html->script(array('admin.min')); ?>
+	<?php echo  $this->Html->script(array('admin.min',"adminAdd.min")); ?>
 	<?php $this->Html->scriptStart(array('inline'=>false)); ?>
 		// $('.dropdown-toggle').dropdown();
 	<?php $this->Html->scriptEnd(); ?>

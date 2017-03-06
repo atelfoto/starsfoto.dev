@@ -109,7 +109,7 @@ public function admin_crop($id=null){
 			imagecopyresampled($dst_r,$img_r,0,0,$this->request->data['x'],$this->request->data['y'],
 				$targ_w,$targ_h,$this->request->data['w'],$this->request->data['h']);
 			imagejpeg($dst_r,WWW_ROOT .'files'.DS."carousel".DS."photo".DS. $id.DS."xvga_".$img,$jpeg_quality);
-			$this->Session->setFlash(__(" Your picture ID %s is been cropped",h($id)), array('class'=>"success", "type"=>'ok'));
+			$this->Flash->success(__(" Your picture ID %s is been cropped",h($id)), array('class'=>"success", "type"=>'ok'));
 			return $this->redirect(array("action"=>"index",array("admin"=>true)));
 		}else{
 			$this->Session->setFlash(__("Please select a crop region again then press submit"), array('class'=>"danger", "type"=>'info'));

@@ -51,9 +51,8 @@
 	</div>
 </div><!-- end col md 9-->
 </div>
-<?php echo $this->Html->css(array('bootstrap-toggle','fileinput.min'),array('inline'=>false)); ?>
-<?php  echo  $this->Html->script(array('bootstrap-toggle','fileinput.min','fileinput_locale_fr'
-	),array('inline'=>false)); ?>
+<?php // echo $this->Html->css(array('bootstrap-toggle','fileinput.min'),array('inline'=>false)); ?>
+<?php //  echo  $this->Html->script(array('bootstrap-toggle','fileinput.min','fileinput_locale_fr'),array('inline'=>false)); ?>
 <?=  $this->Html->scriptStart(array('inline'=>false)); ?>
 $(document).ready(function(e) {
   $('#content').keyup(function() {
