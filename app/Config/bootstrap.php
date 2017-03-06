@@ -23,6 +23,7 @@
  */
 
 // Setup a 'default' cache configuration for use in the application.
+Configure::write('Config.language',"fra");
 Cache::config('default', array('engine' => 'File'));
 
 /**

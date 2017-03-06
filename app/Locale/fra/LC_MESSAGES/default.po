@@ -1,0 +1,2178 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CakePHP\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Pierre Martin <pierre@occi-tech.com>\n"
+"Language-Team: Cakephp-fr.org <contact@cakephp-fr.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.7.7\n"
+
+#: Console/Templates/admin/views/form.ctp:38
+msgid "contenu"
+msgstr "Contenu"
+
+#: Console/Templates/admin/views/form.ctp:41
+msgid "publication"
+msgstr "publication"
+
+#: Console/Templates/admin/views/index.ctp:23;134
+#: Console/Templates/public/views/index.ctp:23 View/Helps/admin_view.ctp:5
+msgid "Help"
+msgstr "Aide"
+
+#: Console/Templates/admin/views/index.ctp:140 View/Helps/admin_add.ctp:62
+#: View/Helps/admin_edit.ctp:24;63 View/Posts/admin_add.ctp:32;87
+#: View/Users/admin_edit.ctp:24;88
+msgid "Closed"
+msgstr "Fermé"
+
+#: Controller/AreasController.php:61;124;160;232
+msgid "Invalid area"
+msgstr "Zone non valide"
+
+#: Controller/AreasController.php:142;164
+msgid "The area has been saved."
+msgstr "L'information a été enregistrée."
+
+#: Controller/AreasController.php:145;167
+msgid "The area could not be saved. Please, try again."
+msgstr "La région n'a pas pu être enregistrée. Veuillez essayer de nouveau."
+
+#: Controller/AreasController.php:182;206
+#: Controller/CharacteristicsController.php:97;121
+#: Controller/HelpsController.php:103;127
+#: Controller/MenusController.php:180;204 Controller/PostsController.php:157
+#: Controller/PropertiesController.php:392;416
+#: Controller/StatesController.php:106;130
+#: Controller/StatusesController.php:108;132
+#: Controller/TypesController.php:106;130 Controller/UsersController.php:333
+msgid "You must provide a valid ID number to enable a user."
+msgstr ""
+"Vous devez fournir un numéro d&#39;identification valide pour permettre à un "
+"utilisateur."
+
+#: Controller/AreasController.php:188;212
+#: Controller/CharacteristicsController.php:103;127
+#: Controller/HelpsController.php:109;133
+#: Controller/MenusController.php:186;210 Controller/PostsController.php:163
+#: Controller/PropertiesController.php:398
+#: Controller/StatesController.php:112;136
+#: Controller/StatusesController.php:114;138
+#: Controller/TypesController.php:112;136 Controller/UsersController.php:339
+msgid "User ID %s has been published."
+msgstr "ID de l’utilisateur %s a été publié."
+
+#: Controller/AreasController.php:190;214
+#: Controller/CharacteristicsController.php:105;129
+#: Controller/HelpsController.php:111;135
+#: Controller/MenusController.php:188;212 Controller/PostsController.php:165
+#: Controller/PropertiesController.php:400;424
+#: Controller/StatesController.php:114;138
+#: Controller/StatusesController.php:116;140
+#: Controller/TypesController.php:114;138
+#: Controller/UsersController.php:341;365
+msgid "User ID %s was not saved."
+msgstr "ID utilisateur %s n’a pas été enregistré"
+
+#: Controller/AreasController.php:194;218
+#: Controller/CharacteristicsController.php:109;133
+#: Controller/HelpsController.php:115;139
+#: Controller/MenusController.php:192;216 Controller/PostsController.php:169
+#: Controller/PropertiesController.php:404;428
+#: Controller/StatesController.php:118;142
+#: Controller/StatusesController.php:120;144
+#: Controller/TypesController.php:118;142 Controller/UsersController.php:345
+msgid "No user by that ID was found."
+msgstr "Aucun utilisateur de cet ID a été trouvé."
+
+#: Controller/AreasController.php:236
+msgid "The area has been deleted."
+msgstr "La région a été supprimée."
+
+#: Controller/AreasController.php:238
+msgid "The area could not be deleted. Please, try again."
+msgstr "La région n'a pas pu être supprimée. Veuillez essayer de nouveau."
+
+#: Controller/CharacteristicsController.php:39;73;147
+msgid "Invalid characteristic"
+msgstr "Caractéristique non valide"
+
+#: Controller/CharacteristicsController.php:54;77
+msgid "The characteristic has been saved."
+msgstr "La caractéristique a été enregistrée."
+
+#: Controller/CharacteristicsController.php:57;80
+msgid "The characteristic could not be saved. Please, try again."
+msgstr "Le package n'a pas pu être enregistré. Veuillez essayer de nouveau."
+
+#: Controller/CharacteristicsController.php:151
+msgid "The characteristic has been deleted."
+msgstr "La caractéristique a été supprimée."
+
+#: Controller/CharacteristicsController.php:153
+msgid "The characteristic could not be deleted. Please, try again."
+msgstr "Le package n'a pas pu être supprimé. Veuillez essayer de nouveau."
+
+#: Controller/GroupsController.php:38;72;97
+msgid "Invalid group"
+msgstr "Groupe incorrect."
+
+#: Controller/GroupsController.php:54;76
+msgid "The group has been saved."
+msgstr "Le groupe a été enregistré."
+
+#: Controller/GroupsController.php:57;79
+msgid "The group could not be saved. Please, try again."
+msgstr "Le package n'a pas pu être enregistré. Veuillez essayer de nouveau."
+
+#: Controller/GroupsController.php:101
+msgid "The group has been deleted."
+msgstr "Le groupe a été supprimé."
+
+#: Controller/GroupsController.php:103
+msgid "The group could not be deleted. Please, try again."
+msgstr "Le package n'a pas pu être supprimé. Veuillez essayer de nouveau."
+
+#: Controller/HelpsController.php:45;79;153
+msgid "Invalid help"
+msgstr "Invalide"
+
+#: Controller/HelpsController.php:60;83
+msgid "The help has been saved."
+msgstr "ceci a été suvegardé"
+
+#: Controller/HelpsController.php:63;86
+msgid "The help could not be saved. Please, try again."
+msgstr "La région n'a pas pu être enregistrée. Veuillez essayer de nouveau."
+
+#: Controller/HelpsController.php:157
+msgid "The help has been deleted."
+msgstr "ceci a été suvegardé"
+
+#: Controller/HelpsController.php:159
+msgid "The help could not be deleted. Please, try again."
+msgstr "La région n'a pas pu être supprimée. Veuillez essayer de nouveau."
+
+#: Controller/MenusController.php:122;156;230
+msgid "Invalid menu"
+msgstr "menu invalide"
+
+#: Controller/MenusController.php:137;160
+msgid "The menu has been saved."
+msgstr "Le menu a été sauvé"
+
+#: Controller/MenusController.php:140;163
+msgid "The menu could not be saved. Please, try again."
+msgstr "La région n'a pas pu être enregistrée. Veuillez essayer de nouveau."
+
+#: Controller/MenusController.php:234
+msgid "The menu has been deleted."
+msgstr "ceci a bien été sauvegardé"
+
+#: Controller/MenusController.php:236
+msgid "The menu could not be deleted. Please, try again."
+msgstr "Le menu ne peut pas être supprimé. Veuillez réessayer."
+
+#: Controller/OfferingsController.php:17
+msgid "Your Mail us is reached."
+msgstr "Votre courrier nous est atteint."
+
+#: Controller/OfferingsController.php:21
+msgid "Thank you.Your Mail Us is reached."
+msgstr "Email envoyé avec succès"
+
+#: Controller/OfferingsController.php:24
+msgid "Thank you to correct your fields."
+msgstr "Merci de corriger vos champs."
+
+#: Controller/PostsController.php:55;63
+msgid "No pages were found for this ID"
+msgstr "Aucuns pages de trouvées pour cet ID"
+
+#: Controller/PostsController.php:96;132;209
+msgid "Invalid post"
+msgstr "post  invalide"
+
+#: Controller/PostsController.php:112;136
+msgid "The post has been saved."
+msgstr "Le post a été sauvé"
+
+#: Controller/PostsController.php:115;139
+msgid "The post could not be saved. Please, try again."
+msgstr "Le poste n&#39;a pas pu être sauvé. Veuillez réessayer."
+
+#: Controller/PostsController.php:181 Controller/UsersController.php:357
+msgid "You must provide a valid ID number to disable a user."
+msgstr ""
+"Vous devez fournir un numéro d’identification valide pour désactiver un "
+"utilisateur."
+
+#: Controller/PostsController.php:187
+msgid "Post ID %s has been disabled."
+msgstr "Le post ayant pour id : %s a été supprimé."
+
+#: Controller/PostsController.php:189
+msgid "Post ID %s was not saved."
+msgstr "La post avec l 'Id %s n'a pas pu être enregistré."
+
+#: Controller/PostsController.php:193
+msgid "No Post by that ID was found."
+msgstr "Aucun post par cet ID a été trouvé."
+
+#: Controller/PostsController.php:213
+msgid "The post has been deleted."
+msgstr " %2$d a été supprimé."
+
+#: Controller/PostsController.php:215
+msgid "The post could not be deleted. Please, try again."
+msgstr "Le post n’a pas été effacé. Veuillez recommencer."
+
+#: Controller/PropertiesController.php:208;247;442
+msgid "Invalid property"
+msgstr "propriétée invalide "
+
+#: Controller/PropertiesController.php:223;251
+msgid "The property has been saved."
+msgstr "cette propriétée a été suprimé."
+
+#: Controller/PropertiesController.php:226;254
+msgid "The property could not be saved. Please, try again."
+msgstr "La région n'a pas pu être enregistrée. Veuillez essayer de nouveau."
+
+#: Controller/PropertiesController.php:361
+msgid "Files saved successfully"
+msgstr " fichier sauvegardé avec succès"
+
+#: Controller/PropertiesController.php:363
+msgid "There was a problem uploading file. Please try again."
+msgstr ""
+"Il y avait un problème de téléchargement du fichier. S’il vous plaît essayer "
+"de nouveau."
+
+#: Controller/PropertiesController.php:379
+msgid "Your pictures has been published in the folder  %s."
+msgstr "Vos photos a été publiée dans le dossier %s."
+
+#: Controller/PropertiesController.php:422 Controller/UsersController.php:363
+msgid "User ID %s has been disabled."
+msgstr "ID de l’utilisateur %s a été désactivé."
+
+#: Controller/PropertiesController.php:446
+msgid "The property has been deleted."
+msgstr "Le %1$s ayant pour id : %2$d a été supprimé."
+
+#: Controller/PropertiesController.php:448
+msgid "The property could not be deleted. Please, try again."
+msgstr "Le package n'a pas pu être supprimé. Veuillez essayer de nouveau."
+
+#: Controller/StatesController.php:28;52;84;156
+msgid "Invalid state"
+msgstr "%s invalide"
+
+#: Controller/StatesController.php:67;88
+msgid "The state has been saved."
+msgstr "ceci a été enregistré."
+
+#: Controller/StatesController.php:70;91
+msgid "The state could not be saved. Please, try again."
+msgstr "L'opération n'a pas pu être sauvé. S'il vous plaît réessayer plus tard."
+
+#: Controller/StatesController.php:160
+msgid "The state has been deleted."
+msgstr "ceci a été supprimé."
+
+#: Controller/StatesController.php:162
+msgid "The state could not be deleted. Please, try again."
+msgstr ""
+"L'opération n'a pas pu être supprimé. S'il vous plaît réessayer plus tard."
+
+#: Controller/StatusesController.php:29;54;86;158
+msgid "Invalid status"
+msgstr "%s invalide"
+
+#: Controller/StatusesController.php:69;90
+msgid "The status has been saved."
+msgstr "ceci a été enregistré."
+
+#: Controller/StatusesController.php:72;93
+msgid "The status could not be saved. Please, try again."
+msgstr "L'opération n'a pas pu être sauvé. S'il vous plaît réessayer plus tard."
+
+#: Controller/StatusesController.php:162
+msgid "The status has been deleted."
+msgstr "Le %1$s ayant pour id : %2$d a été supprimé."
+
+#: Controller/StatusesController.php:164
+msgid "The status could not be deleted. Please, try again."
+msgstr ""
+"L'opération n'a pas pu être supprimé. S'il vous plaît réessayer plus tard."
+
+#: Controller/TypesController.php:39;53;84;156
+msgid "Invalid type"
+msgstr "%s invalide"
+
+#: Controller/TypesController.php:67;88
+msgid "The type has been saved."
+msgstr "ceci a bien été supprimé"
+
+#: Controller/TypesController.php:70;91
+msgid "The type could not be saved. Please, try again."
+msgstr "Le type n’a pas pu être enregistrée. Veuillez essayer de nouveau."
+
+#: Controller/TypesController.php:160
+msgid "The type has been deleted."
+msgstr "A été effacé"
+
+#: Controller/TypesController.php:162
+msgid "The type could not be deleted. Please, try again."
+msgstr "ceci n'a pas pu être supprimée. Veuillez essayer de nouveau."
+
+#: Controller/UsersController.php:28
+msgid "Good morning %s You are now linked"
+msgstr "Bonjour  %s Vous êtes maintenant connecté"
+
+#: Controller/UsersController.php:36
+msgid "Your name to employ or password is wrong."
+msgstr "Votre nom d'user ou mot de passe sont incorrects."
+
+#: Controller/UsersController.php:46
+msgid "you are now disconnected"
+msgstr "vous êtes maintenant déconnecté"
+
+#: Controller/UsersController.php:96;308;385
+msgid "Invalid user"
+msgstr "%s invalide"
+
+#: Controller/UsersController.php:122;275
+msgid " your registration to our site"
+msgstr "votre inscription sur notre site"
+
+#: Controller/UsersController.php:134;287
+msgid ""
+"Thank you you are registered mail sent to you to confirm your compte.Please "
+"check your spam in case."
+msgstr ""
+"Merci de votre inscription.Un mail vous a été envoyé pour confirmer votre "
+"compte. Veuillez vérifier votre dossier spam au cas."
+
+#: Controller/UsersController.php:138;291
+msgid "Thank you to correct your mistakes"
+msgstr "Merci de corriger vos erreurs"
+
+#: Controller/UsersController.php:157
+msgid "This change link is not good"
+msgstr "Ce lien de changement est pas bon"
+
+#: Controller/UsersController.php:160
+msgid "Your account has been validated"
+msgstr "Votre compte a été validé"
+
+#: Controller/UsersController.php:176
+msgid "This email address is not associated with any account"
+msgstr "Cette adresse email n'est associée à aucun compte existant"
+
+#: Controller/UsersController.php:185
+msgid "Password regeneration"
+msgstr "Régénération de mot de passe"
+
+#: Controller/UsersController.php:190
+msgid ""
+"An email was sent to you with instructions to regenerate your password! "
+"Please check your span !!"
+msgstr ""
+"Un email vous a été envoyé avec des instructions pour régénérer votre mot de "
+"passe ! S’il vous plaît vérifier vos spams!!"
+
+#: Controller/UsersController.php:207
+msgid "This link does not look good"
+msgstr "Ce lien ne semble pas bon"
+
+#: Controller/UsersController.php:220
+msgid "your password has been changed"
+msgstr "Votre mot de passe a bien été modifié."
+
+#: Controller/UsersController.php:245
+msgid "Your information has been changed"
+msgstr "Votre information a été changé"
+
+#: Controller/UsersController.php:248
+msgid "Your information could not be validated"
+msgstr "Votre information n&#39;a pu être validé"
+
+#: Controller/UsersController.php:312
+msgid "The user has been saved."
+msgstr "Le %1$s a été sauvegardé"
+
+#: Controller/UsersController.php:315
+msgid "The user could not be saved. Please, try again."
+msgstr "﻿L’utilisateur n’a pas pu être enregistré. Veuillez essayer de nouveau."
+
+#: Controller/UsersController.php:369
+msgid "No User by that ID was found."
+msgstr "Aucun utilisateur par cet ID a été trouvé."
+
+#: Controller/UsersController.php:389
+msgid "The user has been deleted."
+msgstr "Le %1$s ayant pour id : %2$d a été supprimé."
+
+#: Controller/UsersController.php:391
+msgid "The user could not be deleted. Please, try again."
+msgstr "ceci n'a pas pu être supprimé. Veuillez essayer de nouveau."
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:80
+msgid "Plugin to process"
+msgstr "traiter la commande"
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:83
+msgid "Better manage, and easily synchronize you application's ACO tree"
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:88
+msgid ""
+"Add new ACOs for new controllers and actions. Does not remove nodes from the "
+"ACO table."
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:93
+msgid ""
+"Perform a full sync on the ACO table.Will create new ACOs or missing "
+"controllers and actions.Will also remove orphaned entries that no longer have "
+"a matching controller/action"
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:97
+msgid "Verify the tree structure of either your Aco or Aro Trees"
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:102
+#, fuzzy
+msgid "The type of tree to verify"
+msgstr "Type"
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:108
+msgid "Recover a corrupted Tree"
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:113
+#, fuzzy
+msgid "The type of tree to recover"
+msgstr "Type"
+
+#: Plugin/AclExtras/Lib/AclExtras.php:123
+msgid "<error>Plugin %s not found or not activated</error>"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:136
+msgid "<success>Aco Update Complete</success>"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:181
+msgid "Deleted %s and all children"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:222
+msgid "Created Aco node: <success>%s</success>"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:275
+msgid "Unable to get methods for \"%s\""
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:296
+msgid "Deleted Aco node: <warning>%s</warning>"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:315
+msgid "<success>Tree is valid and strong</success>"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:333
+msgid "Tree has been recovered, or tree did not need recovery."
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:335
+msgid "<error>Tree recovery failed.</error>"
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:24
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:43
+#: Plugin/BoostCake/View/Elements/bootstrap2/alerts.ctp:6
+msgid "Alert notice message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:46;62
+#: Plugin/BoostCake/View/Elements/bootstrap2/alerts.ctp:10
+#: Plugin/BoostCake/View/Elements/bootstrap3/alerts.ctp:6
+msgid "Alert success message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:50
+#: Plugin/BoostCake/View/Elements/bootstrap2/alerts.ctp:15
+msgid "Alert error message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:66
+#: Plugin/BoostCake/View/Elements/bootstrap3/alerts.ctp:11
+msgid "Alert info message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:70
+#: Plugin/BoostCake/View/Elements/bootstrap3/alerts.ctp:16
+msgid "Alert warning message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:74
+#: Plugin/BoostCake/View/Elements/bootstrap3/alerts.ctp:21
+msgid "Alert danger message testing..."
+msgstr ""
+
+#: View/Areas/admin_add.ctp:1;2 View/Areas/admin_edit.ctp:1;2
+#: View/Elements/property/form.ctp:3 View/Properties/area.ctp:1;3
+msgid "area"
+msgstr "ville"
+
+#: View/Areas/admin_add.ctp:6
+msgid "Add Area"
+msgstr "ajouter"
+
+#: View/Areas/admin_add.ctp:27;57 View/Areas/admin_edit.ctp:27;62
+#: View/Characteristics/add.ctp:27;59 View/Characteristics/admin_add.ctp:27;59
+#: View/Characteristics/admin_edit.ctp:27;62
+#: View/Characteristics/edit.ctp:27;63 View/Helps/admin_add.ctp:27
+#: View/Menus/admin_add.ctp:27;90 View/Menus/admin_edit.ctp:27;93
+#: View/Posts/admin_edit.ctp:27;90 View/Properties/admin_add.ctp:27;115
+#: View/Properties/admin_edit.ctp:27;111 View/Properties/admin_rename.ctp:11
+#: View/Properties/admin_upload.ctp:13 View/States/add.ctp:27;57
+#: View/States/admin_add.ctp:27;57 View/States/admin_edit.ctp:27;61
+#: View/States/edit.ctp:27;61 View/Statuses/admin_add.ctp:27;57
+#: View/Statuses/admin_edit.ctp:27;61 View/Types/admin_add.ctp:27;57
+#: View/Types/admin_edit.ctp:27;61 View/Users/admin_add.ctp:26;73
+#: View/Users/admin_signup.ctp:29;64
+msgid "closed"
+msgstr "fermé"
+
+#: View/Areas/admin_add.ctp:32;56 View/Areas/admin_edit.ctp:32;61
+#: View/Characteristics/add.ctp:32;58 View/Characteristics/admin_add.ctp:32;58
+#: View/Characteristics/admin_edit.ctp:32;61
+#: View/Characteristics/edit.ctp:32;62 View/Helps/admin_add.ctp:32;61
+#: View/Helps/admin_edit.ctp:29;62 View/Menus/admin_add.ctp:32;89
+#: View/Menus/admin_edit.ctp:32;92 View/Posts/admin_add.ctp:28;86
+#: View/Posts/admin_edit.ctp:32;89 View/Properties/admin_add.ctp:32;114
+#: View/Properties/admin_edit.ctp:32;110 View/Properties/admin_rename.ctp:16
+#: View/States/add.ctp:32;56 View/States/admin_add.ctp:32;56
+#: View/States/admin_edit.ctp:32;60 View/States/edit.ctp:32;60
+#: View/Statuses/admin_add.ctp:32;56 View/Statuses/admin_edit.ctp:32;60
+#: View/Types/admin_add.ctp:32;56 View/Types/admin_edit.ctp:32;60
+#: View/Users/admin_add.ctp:24;71 View/Users/admin_edit.ctp:20;87
+#: View/Users/admin_signup.ctp:27;63
+msgid "publish"
+msgstr "publié"
+
+#: View/Areas/admin_add.ctp:43 View/Areas/admin_edit.ctp:47
+#: View/Areas/admin_view.ctp:42;76 View/Characteristics/add.ctp:43
+#: View/Characteristics/admin_add.ctp:43 View/Characteristics/admin_edit.ctp:46
+#: View/Characteristics/admin_view.ctp:45;79 View/Characteristics/edit.ctp:47
+#: View/Helps/admin_add.ctp:43 View/Helps/admin_edit.ctp:44
+#: View/Helps/admin_view.ctp:43 View/Menus/admin_add.ctp:43
+#: View/Menus/admin_edit.ctp:47 View/Menus/admin_view.ctp:43
+#: View/Posts/admin_add.ctp:43 View/Posts/admin_edit.ctp:46
+#: View/Posts/admin_view.ctp:43 View/Properties/admin_add.ctp:44
+#: View/Properties/admin_edit.ctp:51 View/Properties/admin_view.ctp:81;229
+#: View/States/add.ctp:43 View/States/admin_add.ctp:43
+#: View/States/admin_edit.ctp:47 View/States/admin_view.ctp:42;76
+#: View/States/edit.ctp:47 View/Statuses/admin_add.ctp:43
+#: View/Statuses/admin_edit.ctp:47 View/Statuses/admin_view.ctp:43;73
+#: View/Types/admin_add.ctp:43 View/Types/admin_edit.ctp:47
+#: View/Types/admin_view.ctp:42;76 View/Users/admin_account.ctp:31
+#: View/Users/admin_edit.ctp:39 View/Users/admin_signup.ctp:37
+#: View/Users/admin_view.ctp:49;145
+msgid "Name"
+msgstr "Nom"
+
+#: View/Areas/admin_add.ctp:47 View/Areas/admin_edit.ctp:52
+#: View/Areas/admin_view.ctp:49 View/Characteristics/add.ctp:47
+#: View/Characteristics/admin_add.ctp:47 View/Characteristics/admin_edit.ctp:50
+#: View/Characteristics/admin_view.ctp:52 View/Characteristics/edit.ctp:51
+#: View/Properties/admin_view.ctp:230 View/States/add.ctp:47
+#: View/States/admin_add.ctp:47 View/States/admin_edit.ctp:51
+#: View/States/admin_view.ctp:49 View/States/edit.ctp:51
+#: View/Statuses/admin_add.ctp:47 View/Statuses/admin_edit.ctp:51
+#: View/Statuses/admin_view.ctp:50 View/Types/admin_add.ctp:47
+#: View/Types/admin_edit.ctp:51 View/Types/admin_view.ctp:49
+msgid "Value"
+msgstr "Valeur"
+
+#: View/Areas/admin_edit.ctp:6
+msgid "Admin Edit Area"
+msgstr "Modifier"
+
+#: View/Areas/admin_edit.ctp:43 View/Areas/admin_view.ctp:35;74
+#: View/Characteristics/admin_view.ctp:38;77 View/Characteristics/edit.ctp:43
+#: View/Helps/admin_edit.ctp:40 View/Helps/admin_view.ctp:36
+#: View/Menus/admin_edit.ctp:43 View/Menus/admin_view.ctp:36
+#: View/Posts/admin_view.ctp:36 View/Properties/admin_view.ctp:74;228
+#: View/States/admin_edit.ctp:43 View/States/admin_view.ctp:35;74
+#: View/States/edit.ctp:43 View/Statuses/admin_edit.ctp:43
+#: View/Statuses/admin_view.ctp:36;71 View/Types/admin_edit.ctp:43
+#: View/Types/admin_view.ctp:35;74 View/Users/admin_edit.ctp:35
+#: View/Users/admin_view.ctp:42;144
+#, fuzzy
+msgid "Id"
+msgstr "Id"
+
+#: View/Areas/admin_index.ctp:1;2;5 View/Areas/index.ctp:1;2
+msgid "Areas"
+msgstr ""
+
+#: View/Areas/admin_index.ctp:12 View/Characteristics/admin_index.ctp:12
+#: View/Helps/admin_index.ctp:12 View/Menus/admin_index.ctp:12
+#: View/Posts/admin_index.ctp:12 View/Properties/admin_index.ctp:12
+#: View/States/admin_index.ctp:12 View/Statuses/admin_index.ctp:12
+#: View/Types/admin_index.ctp:12
+msgid "Add"
+msgstr "Ajouter"
+
+#: View/Areas/admin_index.ctp:22 View/Statuses/admin_index.ctp:22
+#: View/Types/admin_index.ctp:22
+#, fuzzy
+msgid "count"
+msgstr "Compte"
+
+#: View/Areas/admin_index.ctp:35 View/Characteristics/admin_index.ctp:33
+#: View/Helps/admin_index.ctp:42 View/Menus/admin_index.ctp:44
+#: View/Posts/admin_index.ctp:40 View/Properties/admin_index.ctp:73
+#: View/States/admin_index.ctp:33 View/Statuses/admin_index.ctp:35
+#: View/Types/admin_index.ctp:35 View/Users/admin_index.ctp:46
+msgid "Offline"
+msgstr "Hors ligne"
+
+#: View/Areas/admin_index.ctp:38
+msgid "Enable this Area"
+msgstr "Activer "
+
+#: View/Areas/admin_index.ctp:40 View/Characteristics/admin_index.ctp:38
+#: View/Helps/admin_index.ctp:47 View/Menus/admin_index.ctp:49
+#: View/Posts/admin_index.ctp:45 View/Properties/admin_index.ctp:78
+#: View/States/admin_index.ctp:38 View/Statuses/admin_index.ctp:40
+#: View/Types/admin_index.ctp:40 View/Users/admin_index.ctp:51
+msgid "In line"
+msgstr "En ligne"
+
+#: View/Areas/admin_index.ctp:43
+msgid "Disable this Area"
+msgstr "Désactiver ceci"
+
+#: View/Areas/admin_index.ctp:53 View/Characteristics/admin_index.ctp:49
+#: View/Helps/admin_index.ctp:58 View/Properties/admin_index.ctp:95
+#: View/States/admin_index.ctp:49 View/Statuses/admin_index.ctp:51
+#: View/Types/admin_index.ctp:51 View/Users/admin_index.ctp:62
+msgid "view"
+msgstr "Vue"
+
+#: View/Areas/admin_index.ctp:59 View/Characteristics/admin_index.ctp:55
+#: View/Helps/admin_index.ctp:64 View/Properties/admin_index.ctp:101
+#: View/States/admin_index.ctp:55 View/Statuses/admin_index.ctp:57
+#: View/Types/admin_index.ctp:57 View/Users/admin_add.ctp:3
+#: View/Users/admin_index.ctp:68 View/Users/admin_signup.ctp:3
+msgid "edit"
+msgstr "Modifié"
+
+#: View/Areas/admin_index.ctp:62;69 View/Characteristics/admin_index.ctp:58;65
+#: View/Helps/admin_index.ctp:67;74 View/Properties/admin_index.ctp:104;111
+#: View/States/admin_index.ctp:58;65 View/Statuses/admin_index.ctp:60;67
+#: View/Types/admin_index.ctp:60;67 View/Users/admin_index.ctp:71;78
+msgid "delete"
+msgstr "Supprimer"
+
+#: View/Areas/admin_index.ctp:90 View/Characteristics/admin_index.ctp:87
+#: View/Helps/admin_index.ctp:96 View/Properties/admin_index.ctp:134
+#: View/States/admin_index.ctp:86 View/Statuses/admin_index.ctp:89
+#: View/Types/admin_index.ctp:88
+msgid "Remove"
+msgstr "supprimer"
+
+#: View/Areas/admin_index.ctp:93 View/Characteristics/admin_index.ctp:90
+#: View/Helps/admin_index.ctp:99 View/Menus/admin_index.ctp:96
+#: View/Posts/admin_index.ctp:93 View/Properties/admin_index.ctp:137
+#: View/States/admin_index.ctp:89 View/Statuses/admin_index.ctp:92
+#: View/Types/admin_index.ctp:91 View/Users/admin_index.ctp:104
+msgid "Are you sure you want to delete"
+msgstr "Etes-vous sûr de vouloir supprimer"
+
+#: View/Areas/admin_index.ctp:94 View/Characteristics/admin_index.ctp:91
+#: View/Helps/admin_index.ctp:100 View/Properties/admin_index.ctp:138
+#: View/States/admin_index.ctp:90 View/Statuses/admin_index.ctp:93
+#: View/Types/admin_index.ctp:92 View/Users/admin_index.ctp:105
+msgid "of your"
+msgstr "votre"
+
+#: View/Areas/admin_index.ctp:94 View/Areas/view.ctp:3
+msgid "areas"
+msgstr ""
+
+#: View/Areas/admin_index.ctp:99 View/Characteristics/admin_index.ctp:96
+#: View/Helps/admin_index.ctp:105 View/Menus/admin_index.ctp:102
+#: View/Posts/admin_index.ctp:99 View/Properties/admin_index.ctp:143
+#: View/States/admin_index.ctp:95 View/Statuses/admin_index.ctp:98
+#: View/Types/admin_index.ctp:97 View/Users/admin_index.ctp:111
+msgid "Cancel"
+msgstr "Annuler"
+
+#: View/Areas/admin_index.ctp:100 View/Characteristics/admin_index.ctp:97
+#: View/Helps/admin_index.ctp:106 View/Menus/admin_index.ctp:103
+#: View/Posts/admin_index.ctp:100 View/Properties/admin_index.ctp:144
+#: View/States/admin_index.ctp:96 View/Statuses/admin_index.ctp:99
+#: View/Types/admin_index.ctp:98 View/Users/admin_index.ctp:113
+msgid "Delete"
+msgstr "Supprimer"
+
+#: View/Areas/admin_view.ctp:5 View/Properties/admin_view.ctp:102
+msgid "Area"
+msgstr "Région:"
+
+#: View/Areas/admin_view.ctp:16
+msgid "Edit Area"
+msgstr "Editer %s"
+
+#: View/Areas/admin_view.ctp:18
+msgid "Delete Area"
+msgstr "Supprimer"
+
+#: View/Areas/admin_view.ctp:19;130 View/Characteristics/admin_view.ctp:20;126
+#: View/Helps/admin_view.ctp:19 View/Menus/admin_view.ctp:19
+#: View/Posts/admin_view.ctp:19 View/Properties/admin_view.ctp:22;245
+#: View/States/admin_view.ctp:19;123 View/Statuses/admin_view.ctp:19;120
+#: View/Types/admin_view.ctp:19;123 View/Users/admin_view.ctp:19;177
+msgid "Are you sure you want to delete # %s?"
+msgstr "Êtes vous sûr de vouloir supprimer # %s ?"
+
+#: View/Areas/admin_view.ctp:20 View/Properties/admin_view.ctp:35
+msgid "List Areas"
+msgstr "Lister %s"
+
+#: View/Areas/admin_view.ctp:22 View/Properties/admin_view.ctp:38
+msgid "New Area"
+msgstr ""
+
+#: View/Areas/admin_view.ctp:24 View/Characteristics/admin_view.ctp:25
+#: View/Properties/admin_view.ctp:23 View/States/admin_view.ctp:24
+#: View/Statuses/admin_view.ctp:24 View/Types/admin_view.ctp:24
+msgid "List Properties"
+msgstr "Liste des Propriétés"
+
+#: View/Areas/admin_view.ctp:25;138 View/Characteristics/admin_view.ctp:27;135
+#: View/Properties/admin_view.ctp:26 View/States/admin_view.ctp:25;131
+#: View/Statuses/admin_view.ctp:25;129 View/Types/admin_view.ctp:25;132
+msgid "New Property"
+msgstr "Nouveau %s"
+
+#: View/Areas/admin_view.ctp:56;88 View/Characteristics/admin_view.ctp:59;90
+#: View/Helps/admin_view.ctp:85 View/Menus/admin_view.ctp:85
+#: View/Posts/admin_view.ctp:85 View/Properties/admin_view.ctp:168;231
+#: View/States/admin_view.ctp:56;87 View/Statuses/admin_view.ctp:84
+#: View/Types/admin_view.ctp:56;87 View/Users/admin_view.ctp:151
+msgid "Online"
+msgstr "En ligne"
+
+#: View/Areas/admin_view.ctp:69 View/Characteristics/admin_view.ctp:72
+#: View/States/admin_view.ctp:69 View/Statuses/admin_view.ctp:66
+#: View/Types/admin_view.ctp:69
+msgid "Related Properties"
+msgstr "Lié à %s"
+
+#: View/Areas/admin_view.ctp:75 View/Characteristics/admin_view.ctp:78
+#: View/States/admin_view.ctp:75 View/Statuses/admin_view.ctp:72
+#: View/Types/admin_view.ctp:75
+msgid "Id2"
+msgstr ""
+
+#: View/Areas/admin_view.ctp:77 View/Characteristics/admin_view.ctp:80
+#: View/Helps/admin_add.ctp:52 View/Helps/admin_edit.ctp:56
+#: View/Helps/admin_view.ctp:64 View/Menus/admin_add.ctp:63
+#: View/Menus/admin_edit.ctp:67 View/Menus/admin_view.ctp:78
+#: View/Posts/admin_add.ctp:51 View/Posts/admin_edit.ctp:54
+#: View/Posts/admin_view.ctp:57 View/Properties/admin_view.ctp:88
+#: View/States/admin_view.ctp:77 View/Statuses/admin_view.ctp:74
+#: View/Types/admin_view.ctp:77 View/Users/admin_view.ctp:147
+msgid "Content"
+msgstr "Contenu"
+
+#: View/Areas/admin_view.ctp:78 View/Characteristics/admin_view.ctp:81
+#: View/States/admin_view.ctp:78 View/Statuses/admin_view.ctp:75
+#: View/Types/admin_view.ctp:78
+msgid "State Id"
+msgstr ""
+
+#: View/Areas/admin_view.ctp:79 View/Characteristics/admin_view.ctp:82
+#: View/States/admin_view.ctp:79 View/Statuses/admin_view.ctp:76
+#: View/Types/admin_view.ctp:79
+msgid "Area Id"
+msgstr ""
+
+#: View/Areas/admin_view.ctp:80 View/Characteristics/admin_view.ctp:83
+#: View/States/admin_view.ctp:80 View/Statuses/admin_view.ctp:77
+#: View/Types/admin_view.ctp:80
+msgid "Status Id"
+msgstr ""
+
+#: View/Areas/admin_view.ctp:81 View/Characteristics/admin_view.ctp:84
+#: View/States/admin_view.ctp:81 View/Statuses/admin_view.ctp:78
+#: View/Types/admin_view.ctp:81
+msgid "Type Id"
+msgstr ""
+
+#: View/Areas/admin_view.ctp:82
+msgid "Characteristic Id"
+msgstr ""
+
+#: View/Areas/admin_view.ctp:83 View/Characteristics/admin_view.ctp:85
+#: View/Properties/admin_add.ctp:67 View/Properties/admin_edit.ctp:74
+#: View/Properties/admin_view.ctp:133 View/States/admin_view.ctp:82
+#: View/Statuses/admin_view.ctp:79 View/Types/admin_view.ctp:82
+msgid "DateYear"
+msgstr ""
+
+#: View/Areas/admin_view.ctp:84 View/Characteristics/admin_view.ctp:86
+#: View/Properties/admin_add.ctp:71 View/Properties/admin_edit.ctp:78
+#: View/Properties/admin_view.ctp:140 View/States/admin_view.ctp:83
+#: View/Statuses/admin_view.ctp:80 View/Types/admin_view.ctp:83
+msgid "Bedrooms"
+msgstr "Piéces:"
+
+#: View/Areas/admin_view.ctp:85 View/Characteristics/admin_view.ctp:87
+#: View/Properties/admin_add.ctp:75 View/Properties/admin_edit.ctp:82
+#: View/Properties/admin_view.ctp:147 View/States/admin_view.ctp:84
+#: View/Statuses/admin_view.ctp:81 View/Types/admin_view.ctp:84
+msgid "Size"
+msgstr "Dimension:"
+
+#: View/Areas/admin_view.ctp:86 View/Characteristics/admin_view.ctp:88
+#: View/Properties/admin_add.ctp:79 View/Properties/admin_edit.ctp:86
+#: View/Properties/admin_view.ctp:154 View/States/admin_view.ctp:85
+#: View/Statuses/admin_view.ctp:82 View/Types/admin_view.ctp:85
+msgid "Level"
+msgstr "Niveau"
+
+#: View/Areas/admin_view.ctp:87 View/Characteristics/admin_view.ctp:89
+#: View/Properties/admin_add.ctp:83 View/Properties/admin_edit.ctp:90
+#: View/Properties/admin_view.ctp:161 View/States/admin_view.ctp:86
+#: View/Statuses/admin_view.ctp:83 View/Types/admin_view.ctp:86
+msgid "Price"
+msgstr "Prix:"
+
+#: View/Areas/admin_view.ctp:89 View/Characteristics/admin_view.ctp:91
+#: View/Properties/admin_view.ctp:175 View/States/admin_view.ctp:88
+#: View/Statuses/admin_view.ctp:85 View/Types/admin_view.ctp:88
+msgid "Media Id"
+msgstr ""
+
+#: View/Areas/admin_view.ctp:90 View/Characteristics/admin_view.ctp:92
+#: View/Properties/admin_view.ctp:182 View/States/admin_view.ctp:89
+#: View/Statuses/admin_view.ctp:86 View/Types/admin_view.ctp:89
+msgid "MediaQuantities"
+msgstr ""
+
+#: View/Areas/admin_view.ctp:91 View/Characteristics/admin_view.ctp:93
+#: View/Helps/admin_view.ctp:78 View/Menus/admin_view.ctp:99
+#: View/Posts/admin_view.ctp:78 View/Properties/admin_view.ctp:189
+#: View/States/admin_view.ctp:90 View/Statuses/admin_view.ctp:87
+#: View/Types/admin_view.ctp:90 View/Users/admin_view.ctp:105;150
+msgid "Modified"
+msgstr "Modifier"
+
+#: View/Areas/admin_view.ctp:92 View/Characteristics/admin_view.ctp:94
+#: View/Helps/admin_view.ctp:71 View/Menus/admin_view.ctp:92
+#: View/Posts/admin_view.ctp:71 View/Properties/admin_view.ctp:196
+#: View/States/admin_view.ctp:91 View/Statuses/admin_view.ctp:88
+#: View/Types/admin_view.ctp:91 View/Users/admin_view.ctp:98;149
+msgid "Created"
+msgstr "créé le"
+
+#: View/Areas/admin_view.ctp:93 View/Characteristics/admin_view.ctp:95
+#: View/States/admin_view.ctp:92 View/Statuses/admin_view.ctp:89
+#: View/Types/admin_view.ctp:92 View/Users/admin_view.ctp:152
+msgid "User Id"
+msgstr ""
+
+#: View/Areas/admin_view.ctp:94 View/Characteristics/admin_view.ctp:96
+#: View/Properties/admin_view.ctp:210 View/States/admin_view.ctp:93
+#: View/Statuses/admin_view.ctp:90 View/Types/admin_view.ctp:93
+msgid "Modified By"
+msgstr "Modifié"
+
+#: View/Areas/view.ctp:2 View/Menus/admin_dashboard.ctp:46;51;65
+#: View/Properties/admin_index.ctp:138 View/Properties/area.ctp:2
+#: View/Properties/buy.ctp:2 View/Properties/rent.ctp:2 View/States/view.ctp:2
+#: View/Statuses/view.ctp:2 View/Types/view.ctp:2
+msgid "properties"
+msgstr "Propriétés"
+
+#: View/Areas/view.ctp:37 View/States/view.ctp:31 View/Statuses/view.ctp:30
+#: View/Types/view.ctp:30
+msgid "bedrooms"
+msgstr "Piéces:"
+
+#: View/Areas/view.ctp:40 View/Properties/view.ctp:81 View/States/view.ctp:34
+#: View/Statuses/view.ctp:33 View/Types/view.ctp:33
+msgid "level"
+msgstr "Niveau"
+
+#: View/Characteristics/add.ctp:1;2 View/Characteristics/admin_add.ctp:1;2
+#: View/Characteristics/admin_edit.ctp:1;2 View/Characteristics/edit.ctp:1;2
+msgid "characteristic"
+msgstr "caractéristique "
+
+#: View/Characteristics/add.ctp:6
+msgid "Add Characteristic"
+msgstr ""
+
+#: View/Characteristics/admin_add.ctp:6
+msgid "Admin Add Characteristic"
+msgstr ""
+
+#: View/Characteristics/admin_edit.ctp:6
+msgid "Admin Edit Characteristic"
+msgstr ""
+
+#: View/Characteristics/admin_index.ctp:1;2;5
+#: View/Characteristics/index.ctp:1;2;5
+msgid "Characteristics"
+msgstr ""
+
+#: View/Characteristics/admin_index.ctp:36
+msgid "Enable this Characteristic"
+msgstr ""
+
+#: View/Characteristics/admin_index.ctp:41
+msgid "Disable this Characteristic"
+msgstr ""
+
+#: View/Characteristics/admin_index.ctp:91
+msgid "characteristics"
+msgstr ""
+
+#: View/Characteristics/admin_view.ctp:5 View/Characteristics/view.ctp:18
+#: View/Properties/admin_view.ctp:123
+msgid "Characteristic"
+msgstr "caractéristique "
+
+#: View/Characteristics/admin_view.ctp:16 View/Characteristics/edit.ctp:6
+msgid "Edit Characteristic"
+msgstr "Modifier"
+
+#: View/Characteristics/admin_view.ctp:18
+msgid "Delete Characteristic"
+msgstr "Supprimer"
+
+#: View/Characteristics/admin_view.ctp:21 View/Properties/admin_view.ctp:53
+msgid "List Characteristics"
+msgstr ""
+
+#: View/Characteristics/admin_view.ctp:23 View/Properties/admin_view.ctp:56;254
+msgid "New Characteristic"
+msgstr ""
+
+#: View/Characteristics/index.ctp:12 View/States/index.ctp:12
+msgid "Add article"
+msgstr ""
+
+#: View/Elements/footer-home.ctp:7
+msgid "sale"
+msgstr "À Vendre"
+
+#: View/Elements/footer-home.ctp:15 View/Properties/rent.ctp:3
+msgid "rent"
+msgstr "à louer"
+
+#: View/Elements/footer-home.ctp:23
+msgid "all"
+msgstr ""
+
+#: View/Elements/footer-home.ctp:31
+msgid "businesses"
+msgstr "Entreprises"
+
+#: View/Elements/footer-home.ctp:39 View/Elements/menu.ctp:8
+#: View/Menus/offerings.ctp:2 View/Properties/offerings.ctp:1
+#, fuzzy
+msgid "offerings"
+msgstr "Investiture"
+
+#: View/Elements/menu.ctp:12
+msgid "contact us"
+msgstr "nous contacter"
+
+#: View/Elements/pagination-counter.ctp:3
+msgid ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total,\n"
+"\t\t\t\tstarting on record {:start}, ending on {:end}"
+msgstr ""
+"Page {:page} de {:pages}, {:current} enregistrements sur un total de {:"
+"count}, à partir de l'enregistrement {:start}, jusqu'au {:end}"
+
+#: View/Elements/pagination.ctp:4
+msgid "previous"
+msgstr "précédent"
+
+#: View/Elements/pagination.ctp:6
+msgid "next"
+msgstr "suivant"
+
+#: View/Elements/Flash/error.ctp:4 View/Elements/Flash/success.ctp:4
+msgid "Error:"
+msgstr "Erreur"
+
+#: View/Elements/menu/contact.ctp:16 View/Elements/menu/offerings.ctp:41
+msgid "name"
+msgstr "Nom"
+
+#: View/Elements/menu/contact.ctp:21 View/Elements/menu/offerings.ctp:46
+msgid "phone"
+msgstr "Téléphone"
+
+#: View/Elements/menu/contact.ctp:23
+msgid "subject"
+msgstr "Objet"
+
+#: View/Elements/menu/contact.ctp:25 View/Elements/menu/offerings.ctp:52
+msgid "Enter your message..."
+msgstr "Saisissez votre message"
+
+#: View/Elements/menu/offerings.ctp:17
+msgid "your property is "
+msgstr "votre propriété est"
+
+#: View/Elements/menu/offerings.ctp:19
+msgid "property type"
+msgstr "Type immobilier :"
+
+#: View/Elements/menu/offerings.ctp:22;23
+msgid "nb of bedrooms"
+msgstr "nb de chambres"
+
+#: View/Elements/menu/offerings.ctp:25
+msgid "size"
+msgstr "Dimension:"
+
+#: View/Elements/menu/offerings.ctp:29;32
+msgid "year"
+msgstr "Année"
+
+#: View/Elements/menu/offerings.ctp:36
+msgid "price"
+msgstr "Prix:"
+
+#: View/Elements/menu/offerings.ctp:48
+msgid "Enter your address..."
+msgstr "Saisissez votre adresse..."
+
+#: View/Elements/menu/offerings.ctp:57
+msgid ""
+"I also like to acquire a free estimate for my good and to be contacted (e) by "
+"your agency."
+msgstr ""
+"Je souhaite également obtenir une estimation gratuite pour mon bien et être "
+"contacté(e) par votre agence."
+
+#: View/Elements/menu/admin/sidebar.ctp:3 View/Menus/admin_dashboard.ctp:4
+msgid "dashboard"
+msgstr "tableau de bord"
+
+# gestionnaire
+#: View/Elements/menu/admin/sidebar.ctp:13
+msgid "%s manager"
+msgstr "%s gestionnaire"
+
+#: View/Elements/menu/admin/sidebar.ctp:17
+msgid "add"
+msgstr "ajouter"
+
+#: View/Elements/property/form.ctp:3
+msgid "all the areas"
+msgstr "tous les secteurs"
+
+#: View/Elements/property/form.ctp:6
+msgid "all the states"
+msgstr "Tous les Etats"
+
+#: View/Elements/property/form.ctp:6 View/States/admin_index.ctp:90
+#: View/States/view.ctp:3
+msgid "states"
+msgstr ""
+
+#: View/Elements/property/form.ctp:9
+msgid "what type"
+msgstr "De quel type?"
+
+#: View/Elements/property/form.ctp:9
+msgid "what ?"
+msgstr "Quoi ?"
+
+#: View/Elements/property/form.ctp:12
+msgid "price maxi"
+msgstr ""
+
+#: View/Elements/property/form.ctp:14
+msgid "mini surface"
+msgstr ""
+
+#: View/Elements/property/index.ctp:24
+msgid "month"
+msgstr "mois"
+
+#: View/Elements/property/index.ctp:56
+msgid "see detail"
+msgstr "voir détails"
+
+#: View/Elements/property/index.ctp:13
+msgid "There is %s answer to your research."
+msgid_plural "There are %s announcements corresponding to your research."
+msgstr[0] "Il y a %s annonce correspondant à votre recherche ."
+msgstr[1] "Il y a %s annonces correspondant à votre recherche ."
+
+#: View/Elements/users/login.ctp:3;32
+msgid "Login"
+msgstr "S'identifier"
+
+#: View/Elements/users/login.ctp:17;18 View/Elements/users/signup.ctp:17;18
+#: View/Users/admin_account.ctp:28 View/Users/admin_add.ctp:40
+#: View/Users/admin_edit.ctp:43 View/Users/admin_signup.ctp:43
+#: View/Users/admin_view.ctp:56
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: View/Elements/users/login.ctp:20 View/Elements/users/signup.ctp:23
+#: View/Users/admin_edit.ctp:51 View/Users/admin_signup.ctp:53
+#: View/Users/password.ctp:12
+msgid "Password"
+msgstr "Mot de passe:"
+
+#: View/Elements/users/login.ctp:21 View/Elements/users/signup.ctp:24
+msgid "Password :"
+msgstr "Mot de passe:"
+
+#: View/Elements/users/login.ctp:24
+#, fuzzy
+msgid "Remember me"
+msgstr "Décembre"
+
+#: View/Elements/users/login.ctp:28
+msgid "Forgot password?"
+msgstr "Mot de passe oublié?"
+
+#: View/Elements/users/login.ctp:33 View/Elements/users/signup.ctp:30
+#: View/Users/admin_account.ctp:41
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: View/Elements/users/signup.ctp:3;29
+msgid "signup"
+msgstr "Se connecter"
+
+#: View/Elements/users/signup.ctp:20
+#, fuzzy
+msgid "mail"
+msgstr "Email"
+
+#: View/Elements/users/signup.ctp:21
+#, fuzzy
+msgid "mail :"
+msgstr "Email"
+
+#: View/Elements/users/signup.ctp:26
+msgid "confirm"
+msgstr "Confirmer nouveau mot de passe"
+
+#: View/Elements/users/signup.ctp:27
+msgid "confirm Password :"
+msgstr "Confirmer le mot de passe:"
+
+#: View/Helps/admin_add.ctp:1;2 View/Helps/admin_edit.ctp:1;2
+msgid "help"
+msgstr "Aide"
+
+#: View/Helps/admin_add.ctp:6
+msgid "Admin Add Help"
+msgstr ""
+
+#: View/Helps/admin_add.ctp:47 View/Helps/admin_edit.ctp:48
+#: View/Helps/admin_view.ctp:50 View/Menus/admin_add.ctp:47
+#: View/Menus/admin_edit.ctp:51 View/Menus/admin_view.ctp:50
+#: View/Posts/admin_add.ctp:47 View/Posts/admin_edit.ctp:50
+#: View/Posts/admin_view.ctp:50 View/Users/admin_view.ctp:146
+msgid "Slug"
+msgstr "url"
+
+#: View/Helps/admin_edit.ctp:6
+msgid "Admin Edit Help"
+msgstr ""
+
+#: View/Helps/admin_edit.ctp:52 View/Menus/admin_edit.ctp:71
+#: View/Posts/admin_add.ctp:69 View/Posts/admin_edit.ctp:82
+#: View/Properties/admin_add.ctp:51;55;59;63
+#: View/Properties/admin_edit.ctp:58;62;66;70 View/Users/admin_add.ctp:60
+msgid "choose"
+msgstr "Choisir"
+
+#: View/Helps/admin_index.ctp:1;2;5
+msgid "Helps"
+msgstr "Aide"
+
+#: View/Helps/admin_index.ctp:45
+msgid "Enable this Help"
+msgstr "Activer "
+
+#: View/Helps/admin_index.ctp:50
+msgid "Disable this Help"
+msgstr "Désactiver "
+
+#: View/Helps/admin_index.ctp:100
+msgid "helps"
+msgstr "Aide"
+
+#: View/Helps/admin_view.ctp:16
+msgid "Edit Help"
+msgstr "Editer %s"
+
+#: View/Helps/admin_view.ctp:18
+msgid "Delete Help"
+msgstr "Supprimer"
+
+#: View/Helps/admin_view.ctp:20
+msgid "List Helps"
+msgstr "Lister %s"
+
+#: View/Helps/admin_view.ctp:22
+msgid "New Help"
+msgstr ""
+
+#: View/Helps/admin_view.ctp:24 View/Menus/admin_view.ctp:24
+#: View/Posts/admin_view.ctp:24 View/Properties/admin_view.ctp:59
+#: View/Users/admin_view.ctp:21
+msgid "List Users"
+msgstr "Lister %s"
+
+#: View/Helps/admin_view.ctp:25 View/Menus/admin_view.ctp:25
+#: View/Posts/admin_view.ctp:25 View/Properties/admin_view.ctp:62
+#: View/Users/admin_view.ctp:24
+msgid "New User"
+msgstr "Nouveau %s"
+
+#: View/Helps/admin_view.ctp:57 View/Menus/admin_view.ctp:106
+#: View/Posts/admin_view.ctp:92 View/Properties/admin_view.ctp:203
+#: View/Users/admin_view.ctp:5
+msgid "User"
+msgstr "Utilisateur "
+
+#: View/Helps/admin_view.ctp:92 View/Menus/admin_add.ctp:79
+#: View/Menus/admin_edit.ctp:82 View/Menus/admin_view.ctp:120
+#: View/Posts/admin_view.ctp:106 View/Users/admin_view.ctp:154
+msgid "Robots"
+msgstr ""
+
+#: View/Helps/admin_view.ctp:99 View/Menus/admin_add.ctp:74
+#: View/Menus/admin_edit.ctp:77 View/Menus/admin_view.ctp:113
+#: View/Posts/admin_add.ctp:64 View/Posts/admin_edit.ctp:66
+#: View/Posts/admin_view.ctp:99 View/Users/admin_view.ctp:153
+msgid "Description"
+msgstr "Description"
+
+#: View/Helps/admin_view.ctp:106 View/Menus/admin_add.ctp:83
+#: View/Menus/admin_edit.ctp:86 View/Menus/admin_view.ctp:127
+#: View/Posts/admin_add.ctp:79 View/Posts/admin_edit.ctp:72
+#: View/Posts/admin_view.ctp:113 View/Users/admin_view.ctp:155
+msgid "Keywords"
+msgstr "mots-clés"
+
+#: View/Layouts/admin.ctp:54
+msgid "Foukis Real Estate"
+msgstr ""
+
+#: View/Layouts/admin.ctp:86
+msgid "Member since"
+msgstr "membre depuis"
+
+#: View/Layouts/admin.ctp:93 View/Users/admin_account.ctp:2;6
+msgid "Account"
+msgstr "Compte"
+
+#: View/Layouts/admin.ctp:98
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: View/Layouts/admin.ctp:140
+msgid "Dashboard"
+msgstr "Panneau d'administration"
+
+#: View/Layouts/default.ctp:46
+msgid "account"
+msgstr "Compte"
+
+#: View/Layouts/home.ctp:94
+msgid "Real Estate in Greece"
+msgstr ""
+
+#: View/Layouts/home.ctp:106
+msgid "home"
+msgstr "Accueil"
+
+#: View/Menus/admin_add.ctp:1;2 View/Menus/admin_edit.ctp:1;2
+#, fuzzy
+msgid "menu"
+msgstr "Le menu a été sauvé"
+
+#: View/Menus/admin_add.ctp:6
+msgid "Admin Add Menu"
+msgstr ""
+
+#: View/Menus/admin_add.ctp:51 View/Menus/admin_edit.ctp:55
+#: View/Menus/admin_view.ctp:57
+msgid "Alias"
+msgstr ""
+
+#: View/Menus/admin_add.ctp:55 View/Menus/admin_edit.ctp:59
+#: View/Menus/admin_view.ctp:64
+msgid "Icon"
+msgstr ""
+
+#: View/Menus/admin_add.ctp:59 View/Menus/admin_edit.ctp:63
+#: View/Menus/admin_view.ctp:71
+#, fuzzy
+msgid "Controller"
+msgstr "Contrôleur manquant"
+
+#: View/Menus/admin_dashboard.ctp:16;22
+msgid "users"
+msgstr "Utilisateurs"
+
+#: View/Menus/admin_dashboard.ctp:32;37
+msgid "posts"
+msgstr "actualités"
+
+#: View/Menus/admin_dashboard.ctp:60
+#, fuzzy
+msgid "menus"
+msgstr "Menus"
+
+#: View/Menus/admin_edit.ctp:6
+msgid "Admin Edit Menu"
+msgstr ""
+
+#: View/Menus/admin_index.ctp:1;2;5
+#, fuzzy
+msgid "Menus"
+msgstr "Menus"
+
+#: View/Menus/admin_index.ctp:47
+msgid "Enable this Menu"
+msgstr ""
+
+#: View/Menus/admin_index.ctp:52
+msgid "Disable this Menu"
+msgstr ""
+
+#: View/Menus/admin_index.ctp:93 View/Posts/admin_index.ctp:90
+msgid "Remove Post"
+msgstr ""
+
+#: View/Menus/admin_index.ctp:97 View/Posts/admin_index.ctp:94
+msgid "of your Articles"
+msgstr ""
+
+#: View/Menus/admin_view.ctp:5 View/Menus/view.ctp:18
+#, fuzzy
+msgid "Menu"
+msgstr "Le menu a été sauvé"
+
+#: View/Menus/admin_view.ctp:16
+#, fuzzy
+msgid "Edit Menu"
+msgstr "Editer %s"
+
+#: View/Menus/admin_view.ctp:18
+msgid "Delete Menu"
+msgstr "Supprimer"
+
+#: View/Menus/admin_view.ctp:20
+msgid "List Menus"
+msgstr "Lister %s"
+
+#: View/Menus/admin_view.ctp:22
+msgid "New Menu"
+msgstr ""
+
+#: View/Menus/contact.ctp:1
+#, fuzzy
+msgid "contact"
+msgstr "Contact"
+
+#: View/Posts/admin_add.ctp:1;2 View/Posts/admin_edit.ctp:1;2
+msgid "post"
+msgstr "Post"
+
+#: View/Posts/admin_add.ctp:6
+msgid "Admin Add Post"
+msgstr ""
+
+#: View/Posts/admin_edit.ctp:6
+msgid "Admin Edit Post"
+msgstr ""
+
+#: View/Posts/admin_index.ctp:1;2;5
+msgid "Posts"
+msgstr "Actualités"
+
+#: View/Posts/admin_index.ctp:43
+msgid "Enable this Post"
+msgstr ""
+
+#: View/Posts/admin_index.ctp:48
+msgid "Disable this Post"
+msgstr ""
+
+#: View/Posts/admin_view.ctp:5
+msgid "Post"
+msgstr "Article"
+
+#: View/Posts/admin_view.ctp:16
+#, fuzzy
+msgid "Edit Post"
+msgstr "Editer %s"
+
+#: View/Posts/admin_view.ctp:18
+msgid "Delete Post"
+msgstr "Supprimer %s"
+
+#: View/Posts/admin_view.ctp:20 View/Users/admin_view.ctp:29
+msgid "List Posts"
+msgstr "Lister %s"
+
+#: View/Posts/admin_view.ctp:22 View/Users/admin_view.ctp:31;186
+msgid "New Post"
+msgstr "Nouveau post"
+
+#: View/Posts/admin_view.ctp:64 View/Properties/admin_view.ctp:116
+#: View/Types/admin_view.ctp:5 View/Users/admin_view.ctp:148
+msgid "Type"
+msgstr "Type"
+
+#: View/Properties/admin_add.ctp:1;2 View/Properties/admin_download -
+#: Copie.ctp:1;2 View/Properties/admin_download.OK.ctp:1;2
+#: View/Properties/admin_edit.ctp:1;2 View/Properties/admin_rename.ctp:1;2
+#: View/Properties/admin_upload.ctp:2;3 View/Properties/admin_view.ctp:1
+msgid "property"
+msgstr "Propriété"
+
+#: View/Properties/admin_add.ctp:6
+msgid "Admin Add Property"
+msgstr "Ajouter une Propriété"
+
+#: View/Properties/admin_download - Copie.ctp:6
+#: View/Properties/admin_download.OK.ctp:6
+msgid "download"
+msgstr ""
+
+#: View/Properties/admin_edit.ctp:6
+msgid "Admin Edit Property"
+msgstr "Editer la Propriété"
+
+#: View/Properties/admin_edit.ctp:94
+msgid "Quantities Pictures"
+msgstr ""
+
+#: View/Properties/admin_index.ctp:1;2;5 View/Properties/index.ctp:2
+#: View/Properties/view.ctp:18
+msgid "Properties"
+msgstr "Propriétés"
+
+#: View/Properties/admin_index.ctp:76
+msgid "Enable this Property"
+msgstr ""
+
+#: View/Properties/admin_index.ctp:81
+msgid "Disable this Property"
+msgstr ""
+
+#: View/Properties/admin_index.ctp:89
+msgid "view and upload pictures"
+msgstr "visualiser et télécharger des images"
+
+#: View/Properties/admin_rename.ctp:6 View/Properties/admin_upload.ctp:7
+msgid "upload"
+msgstr "télécharger"
+
+#: View/Properties/admin_upload.ctp:20
+msgid "submit"
+msgstr "envoyer"
+
+#: View/Properties/admin_view.ctp:7
+msgid "Property"
+msgstr "Propriété"
+
+#: View/Properties/admin_view.ctp:18
+msgid "Edit Property"
+msgstr ""
+
+#: View/Properties/admin_view.ctp:21
+msgid "Delete Property"
+msgstr ""
+
+#: View/Properties/admin_view.ctp:29 View/States/admin_view.ctp:20
+msgid "List States"
+msgstr "Liste %s"
+
+#: View/Properties/admin_view.ctp:32 View/States/admin_view.ctp:22
+msgid "New State"
+msgstr ""
+
+#: View/Properties/admin_view.ctp:41 View/Statuses/admin_view.ctp:20
+msgid "List Statuses"
+msgstr "Liste %s"
+
+#: View/Properties/admin_view.ctp:44 View/Statuses/admin_view.ctp:22
+msgid "New Status"
+msgstr "Nouveau %s"
+
+#: View/Properties/admin_view.ctp:47 View/Types/admin_view.ctp:20
+msgid "List Types"
+msgstr "Liste %s"
+
+#: View/Properties/admin_view.ctp:50 View/Types/admin_view.ctp:22
+msgid "New Type"
+msgstr ""
+
+#: View/Properties/admin_view.ctp:95 View/States/admin_view.ctp:5
+msgid "State"
+msgstr "Pays:"
+
+#: View/Properties/admin_view.ctp:109 View/Statuses/admin_view.ctp:5
+msgid "Status"
+msgstr "Statut"
+
+#: View/Properties/admin_view.ctp:223
+msgid "Related Characteristics"
+msgstr ""
+
+#: View/Properties/buy.ctp:1
+msgid "I search a property to be bought"
+msgstr "Je recherche un bien à acheter"
+
+#: View/Properties/buy.ctp:3
+msgid "buy"
+msgstr "acheter"
+
+#: View/Properties/buy.ctp:33 View/Properties/index.ctp:30
+#: View/Properties/rent.ctp:31
+msgid "search"
+msgstr "Recherche"
+
+#: View/Properties/index.ctp:1
+msgid "I search a property"
+msgstr "Je recherche une propriété"
+
+#: View/Properties/rent.ctp:1
+msgid "I search a property to be rent"
+msgstr "Je recherche un bien à être louer"
+
+#: View/Properties/view.ctp:24;79
+msgid "number of rooms"
+msgstr "nombre de pièces"
+
+#: View/Properties/view.ctp:66
+msgid "details of the overall"
+msgstr "Fiche détaillée du bien immobilier-"
+
+#: View/Properties/view.ctp:68
+msgid "overview"
+msgstr "vue globale"
+
+#: View/Properties/view.ctp:75
+msgid "type of flat"
+msgstr "Type d'appartement"
+
+#: View/Properties/view.ctp:77
+msgid "complete surface"
+msgstr "Surface totale "
+
+#: View/Properties/view.ctp:80
+msgid "year building"
+msgstr "année de construction"
+
+#: View/Properties/view.ctp:82
+msgid "price m²"
+msgstr "prix m²"
+
+#: View/Properties/view.ctp:98
+msgid "equipment"
+msgstr "équipement"
+
+#: View/Properties/view.ctp:102
+msgid "door"
+msgstr "Porte"
+
+#: View/Properties/view.ctp:103
+msgid "insulation"
+msgstr "isolation,"
+
+#: View/Properties/view.ctp:104
+msgid "heating"
+msgstr "chauffages"
+
+#: View/Properties/view.ctp:105
+msgid "hot water"
+msgstr "eau chaude"
+
+#: View/Properties/view.ctp:106
+msgid "elevator"
+msgstr "ascenceur"
+
+#: View/Properties/view.ctp:107
+msgid "digital lock"
+msgstr "digicode"
+
+#: View/Properties/view.ctp:108
+msgid "intercom"
+msgstr "interphone"
+
+#: View/Properties/view.ctp:109
+msgid "air-conditioning"
+msgstr "Climatisation"
+
+#: View/Properties/view.ctp:110
+msgid "kitchens"
+msgstr "cuisines"
+
+#: View/Properties/view.ctp:111
+msgid "living rooms"
+msgstr "salons"
+
+#: View/Properties/view.ctp:112
+msgid "bathrooms"
+msgstr "Salles de bain / eau"
+
+#: View/Properties/view.ctp:117
+msgid "simulate your monthly payments"
+msgstr "simuler vos paiements mensuels"
+
+#: View/Properties/view.ctp:122
+msgid "most"
+msgstr "Les Plus"
+
+#: View/Properties/view.ctp:131
+msgid "number of lots"
+msgstr "nombre de lots"
+
+#: View/Properties/view.ctp:132
+msgid "common expenses per year"
+msgstr "dépenses communes par an"
+
+#: View/States/add.ctp:1;2 View/States/admin_add.ctp:1;2
+#: View/States/admin_edit.ctp:1;2 View/States/edit.ctp:1;2
+msgid "state"
+msgstr "Pays:"
+
+#: View/States/add.ctp:6
+msgid "Add State"
+msgstr ""
+
+#: View/States/admin_add.ctp:6
+msgid "Admin Add State"
+msgstr "Ajouter "
+
+#: View/States/admin_edit.ctp:6
+msgid "Admin Edit State"
+msgstr "modifier "
+
+#: View/States/admin_index.ctp:1;2;5 View/States/index.ctp:1;2;5
+msgid "States"
+msgstr ""
+
+#: View/States/admin_index.ctp:36
+msgid "Enable this State"
+msgstr ""
+
+#: View/States/admin_index.ctp:41
+msgid "Disable this State"
+msgstr ""
+
+#: View/States/admin_view.ctp:16 View/States/edit.ctp:6
+msgid "Edit State"
+msgstr ""
+
+#: View/States/admin_view.ctp:18
+msgid "Delete State"
+msgstr "Supprimer %s"
+
+#: View/Statuses/admin_add.ctp:1;2 View/Statuses/admin_edit.ctp:1;2
+msgid "status"
+msgstr "Statut"
+
+#: View/Statuses/admin_add.ctp:6
+msgid "Admin Add Status"
+msgstr ""
+
+#: View/Statuses/admin_edit.ctp:6
+msgid "Admin Edit Status"
+msgstr ""
+
+#: View/Statuses/admin_index.ctp:1;2;5
+msgid "Statuses"
+msgstr "Statuts"
+
+#: View/Statuses/admin_index.ctp:38
+msgid "Enable this Status"
+msgstr ""
+
+#: View/Statuses/admin_index.ctp:43
+msgid "Disable this Status"
+msgstr "Désactiver "
+
+#: View/Statuses/admin_index.ctp:93
+msgid "statuses"
+msgstr "Statuts"
+
+#: View/Statuses/admin_view.ctp:16
+msgid "Edit Status"
+msgstr "Editer %s"
+
+#: View/Statuses/admin_view.ctp:18
+msgid "Delete Status"
+msgstr "Supprimer %s"
+
+#: View/Types/admin_add.ctp:1;2 View/Types/admin_edit.ctp:1;2
+msgid "type"
+msgstr "Type"
+
+#: View/Types/admin_add.ctp:6
+msgid "Admin Add Type"
+msgstr "Admin Add Post"
+
+#: View/Types/admin_edit.ctp:6
+msgid "Admin Edit Type"
+msgstr "Modifier"
+
+#: View/Types/admin_index.ctp:1;2;5
+msgid "Types"
+msgstr ""
+
+#: View/Types/admin_index.ctp:38
+msgid "Enable this Type"
+msgstr ""
+
+#: View/Types/admin_index.ctp:43
+msgid "Disable this Type"
+msgstr ""
+
+#: View/Types/admin_index.ctp:92
+msgid "types"
+msgstr ""
+
+#: View/Types/admin_view.ctp:16
+msgid "Edit Type"
+msgstr "Modifié"
+
+#: View/Types/admin_view.ctp:18
+msgid "Delete Type"
+msgstr "Supprimer"
+
+#: View/Users/admin_account.ctp:23
+msgid "Select a file from your computer"
+msgstr "Choisissez un fichier sur votre ordinateur"
+
+#: View/Users/admin_account.ctp:32 View/Users/admin_view.ctp:70
+msgid "firstname"
+msgstr "prénom"
+
+#: View/Users/admin_account.ctp:33
+#, fuzzy
+msgid "email"
+msgstr "Email"
+
+#: View/Users/admin_account.ctp:34 View/Users/admin_add.ctp:50
+#: View/Users/password.ctp:11
+msgid "password"
+msgstr "Mot de passe"
+
+#: View/Users/admin_account.ctp:40
+msgid "Change"
+msgstr "Change"
+
+#: View/Users/admin_add.ctp:1;2 View/Users/admin_edit.ctp:1;2
+#: View/Users/admin_signup.ctp:1;2
+msgid "user"
+msgstr "Utilisateur "
+
+#: View/Users/admin_add.ctp:22 View/Users/admin_signup.ctp:23
+msgid "Add User"
+msgstr ""
+
+#: View/Users/admin_add.ctp:45 View/Users/admin_edit.ctp:47
+#: View/Users/admin_signup.ctp:48 View/Users/admin_view.ctp:63
+#, fuzzy
+msgid "Mail"
+msgstr "Email"
+
+#: View/Users/admin_add.ctp:56 View/Users/password.ctp:14
+msgid "Confirm Password"
+msgstr "Confirmez le mot de passe"
+
+#: View/Users/admin_add.ctp:57 View/Users/password.ctp:13
+msgid "confirm password"
+msgstr "confirmez le mot de passe"
+
+#: View/Users/admin_edit.ctp:6
+msgid "Admin Edit User"
+msgstr "Editer "
+
+#: View/Users/admin_edit.ctp:77 View/Users/admin_view.ctp:119
+msgid "Token"
+msgstr ""
+
+#: View/Users/admin_index.ctp:1;2;7 View/Users/index.ctp:1;2
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: View/Users/admin_index.ctp:12
+msgid " Add"
+msgstr "Ajouter"
+
+#: View/Users/admin_index.ctp:49
+msgid "Enable this User"
+msgstr "Activer Utilisateur"
+
+#: View/Users/admin_index.ctp:54
+msgid "Disable this User"
+msgstr "Désactivez cette utilisateur"
+
+#: View/Users/admin_index.ctp:101
+msgid "Remove User"
+msgstr "Supprimer l'utilisateur"
+
+#: View/Users/admin_view.ctp:16
+msgid "Edit User"
+msgstr "Editer"
+
+#: View/Users/admin_view.ctp:18
+msgid "delete user"
+msgstr "suprimer cette utilisateur"
+
+#: View/Users/admin_view.ctp:27
+msgid "List Groups"
+msgstr "Liste "
+
+#: View/Users/admin_view.ctp:77
+msgid "Lastname"
+msgstr "Nom"
+
+#: View/Users/admin_view.ctp:84
+msgid "Active"
+msgstr "Actions"
+
+#: View/Users/admin_view.ctp:91
+msgid "Avatar"
+msgstr ""
+
+#: View/Users/admin_view.ctp:112
+#, fuzzy
+msgid "Role"
+msgstr "Rôle"
+
+#: View/Users/admin_view.ctp:126
+msgid "Lastlogin"
+msgstr "Dernière connexion"
+
+#: View/Users/admin_view.ctp:139
+msgid "Related Posts"
+msgstr "Articles en rapport"
+
+#: View/Users/forgot.ctp:3
+msgid "Password Reminder"
+msgstr "Rappel de mot de passe"
+
+#: View/Users/forgot.ctp:10
+msgid ""
+"To change your password please fill in the fields below your email address."
+msgstr ""
+"Pour modifier votre mot de passe veuillez remplir les champs ci-dessous et "
+"votre adresse email."
+
+#: View/Users/forgot.ctp:12
+msgid ""
+"An email will be sent with the information needed to create your new password"
+msgstr ""
+"Un email sera envoyé avec les informations nécessaires pour créer votre "
+"nouveau mot de passe"
+
+#: View/Users/forgot.ctp:14
+msgid "Your Mail"
+msgstr ""
+
+#: View/Users/forgot.ctp:15
+msgid "Your Mail :"
+msgstr ""
+
+#: View/Users/forgot.ctp:17 View/Users/password.ctp:17
+msgid "Submit"
+msgstr "Envoyer"
+
+#: View/Users/password.ctp:3
+msgid "Change password"
+msgstr "Changer le mot de passe"
+
+#: Model/Area.php:validation for field name Model/Post.php:validation
+#: Model/State.php:validation Model/Status.php:validation
+#: Model/Type.php:validation
+msgid "notBlank"
+msgstr ""
+
+#: Model/Characteristic.php:validation for field name
+#: Model/Property.php:validation name;validation type_id;validation
+#: area_id;validation status_id
+msgid "This field can not stay empty"
+msgstr "Ce champ ne peut être vide"
+
+#: Model/Group.php:validation for field name Model/Help.php:validation
+msgid "Your custom message here"
+msgstr "Votre message personnalisé ici"
+
+#: Model/Menu.php:validation for field name
+msgid "You must specify a title"
+msgstr "Vous devez spécifier un titre"
+
+#: Model/Menu.php:validation for field name
+msgid "This name has already been selected"
+msgstr "Ce nom est déjà utilisé."
+
+#: Model/Property.php:validation for field Characteristic
+msgid "Thank you for choosing one at least options"
+msgstr "Merci de choisir au moins une options"
+
+#: Model/Property.php:validation for field dateYear
+msgid "Please select a year"
+msgstr "Veuillez choisir une année :"
+
+#: Model/Property.php:validation for field bedrooms
+msgid "Thank you to submit the number of rooms"
+msgstr "merci de soumettre le nombre de chambres"
+
+#: Model/Property.php:validation for field size
+msgid "This field must be numeric"
+msgstr "Ce champ  doit  être numérique"
+
+#: Model/Property.php:validation for field price
+msgid "money"
+msgstr ""
+
+#: Model/User.php:validation for field username;validation mail
+msgid "This field must not be empty"
+msgstr "Ce champ ne peut être vide"
+
+#: Model/User.php:validation for field username
+msgid "This username is already used"
+msgstr "Ce nom d'utilisateur est déjà pris"
+
+#: Model/User.php:validation for field mail
+msgid "You must enter a valid email address"
+msgstr "Vous devez entrer une adresse e-mail valide"
+
+#: Model/User.php:validation for field password
+msgid "You must specify a password"
+msgstr "Vous devez spécifier un mot de passe"
+
+#: Model/User.php:validation for field password2
+msgid "You must confirm your password"
+msgstr "Vous devez confirmer votre mot de passe"
+
+#: Model/User.php:validation for field password2
+msgid "This password is not identical"
+msgstr "Ce mot de passe est pas identiques"
+
+#: Model/User.php:validation for field avatarf
+msgid "You must send a jpg"
+msgstr "Vous devez envoyer un jpg"
+
+#~ msgid "residential"
+#~ msgstr "Residence"
+
+#~ msgid "land"
+#~ msgstr "terrains"
+
+#~ msgid "Firstname"
+#~ msgstr "Prénom"
+
+#~ msgid "Scaffold :: "
+#~ msgstr "Scaffold :: "
+
+#~ msgid "updated"
+#~ msgstr "mis à jour"
+
+#~ msgid "saved"
+#~ msgstr "sauvegardé"
+
+#~ msgid "Please correct errors below."
+#~ msgstr "Merci de corriger les erreurs ci-dessous."
+
+#~ msgid "There was an error deleting the %1$s with id: %2$s"
+#~ msgstr ""
+#~ "Une erreur est survenue lors de la suppression de %1$s ayant pour id : %2$d"
+
+#~ msgid "You are not authorized to access that location."
+#~ msgstr "Vous n'êtes pas autorisé à accéder à cet endroit."
+
+#~ msgid "Not Found"
+#~ msgstr "Introuvable"
+
+#~ msgid "An Internal Error Has Occurred."
+#~ msgstr "Une erreur interne s'est produite."
+
+#~ msgid "The requested file was not found"
+#~ msgstr "Le fichier demandé est introuvable"
+
+#~ msgid "%d KB"
+#~ msgstr "%d Ko"
+
+#~ msgid "%.2f MB"
+#~ msgstr "%.2f Mo"
+
+#~ msgid "%.2f GB"
+#~ msgstr "%.2f Go"
+
+#~ msgid "%.2f TB"
+#~ msgstr "%.2f To"
+
+#~ msgid "%d Byte"
+#~ msgid_plural "%d Bytes"
+#~ msgstr[0] "%d Octet"
+#~ msgstr[1] "%d Octets"
+
+#~ msgid "Today, %s"
+#~ msgstr "Aujourd'hui, %s"
+
+#~ msgid "Yesterday, %s"
+#~ msgstr "Hier, %s"
+
+#~ msgid "Tomorrow, %s"
+#~ msgstr "Demain, %s"
+
+#~ msgid "Sunday"
+#~ msgstr "Dimanche"
+
+#~ msgid "Monday"
+#~ msgstr "Lundi"
+
+#~ msgid "Tuesday"
+#~ msgstr "Mardi"
+
+#~ msgid "Wednesday"
+#~ msgstr "Mercredi"
+
+#~ msgid "Thursday"
+#~ msgstr "Jeudi"
+
+#~ msgid "Friday"
+#~ msgstr "Vendredi"
+
+#~ msgid "Saturday"
+#~ msgstr "Samedi"
+
+#~ msgid "On %s %s"
+#~ msgstr "Le %s %s"
+
+#~ msgid "just now"
+#~ msgstr "à l'instant"
+
+#~ msgid "on %s"
+#~ msgstr "le %s"
+
+#~ msgid "%s ago"
+#~ msgstr "il y a %s"
+
+#~ msgid "days"
+#~ msgstr "jours"
+
+#~ msgid "day"
+#~ msgstr "jour"
+
+#~ msgid "mon"
+#~ msgstr "mois"
+
+#~ msgid "%d week"
+#~ msgid_plural "%d weeks"
+#~ msgstr[0] "%d semaine"
+#~ msgstr[1] "%d semaines"
+
+#~ msgid "%d day"
+#~ msgid_plural "%d days"
+#~ msgstr[0] "%d jour"
+#~ msgstr[1] "%d jours"
+
+#~ msgid "%d hour"
+#~ msgid_plural "%d hours"
+#~ msgstr[0] "%d heure"
+#~ msgstr[1] "%d heures"
+
+#~ msgid "%d minute"
+#~ msgid_plural "%d minutes"
+#~ msgstr[0] "%d minute"
+#~ msgstr[1] "%d minutes"
+
+#~ msgid "%d second"
+#~ msgid_plural "%d seconds"
+#~ msgstr[0] "%d seconde"
+#~ msgstr[1] "%d secondes"
+
+#~ msgid "Error in field %s"
+#~ msgstr "Erreur dans le champ %s"
+
+#~ msgid "January"
+#~ msgstr "Janvier"
+
+#~ msgid "February"
+#~ msgstr "Février"
+
+#~ msgid "April"
+#~ msgstr "Avril"
+
+#~ msgid "May"
+#~ msgstr "Mai"
+
+#~ msgid "June"
+#~ msgstr "Juin"
+
+#~ msgid "July"
+#~ msgstr "Juillet"
+
+#~ msgid "August"
+#~ msgstr "Août"
+
+#~ msgid "September"
+#~ msgstr "Septembre"
+
+#~ msgid "October"
+#~ msgstr "Octobre"
+
+#~ msgid "November"
+#~ msgstr "Novembre"
+
+#~ msgid " of "
+#~ msgstr " de "
+
+#~ msgid "List"
+#~ msgstr "Lister"
+
+#~ msgid "View"
+#~ msgstr "Voir"
+
+#~ msgid "Edit"
+#~ msgstr "Modifier"
+
+#~ msgid "View %s"
+#~ msgstr "Voir %s"
