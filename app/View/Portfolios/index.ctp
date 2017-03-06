@@ -62,7 +62,7 @@ echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env
 		  				<small>
 		  					<i class="fa fa-calendar">&nbsp;</i>&nbsp;
 		  					<?php echo __('published') ?> :&nbsp;
-		  					<?php echo $this->Date->french($portfolio['Portfolio']['created']); ?> <br>
+		  					<?php echo $this->Time->format($portfolio['Portfolio']['created'] , "%e %B, %Y"); ?> <br />
 		  					<span style="min-width:400px;">
 		  						<i class="fa fa-user"></i>
 		  						<?php echo __('photographer'); ?>(s) :&nbsp;<?php  echo h($portfolio['Portfolio']['photographer']); ?>
