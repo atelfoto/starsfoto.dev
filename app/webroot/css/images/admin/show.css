@@ -1,0 +1,12 @@
+.radio, .checkbox {
+		position: relative;
+		display: block;
+		margin-top: 0px;
+		margin-bottom: 10px;
+}
+.alignLeft{ float:left;margin-right: 10px;}
+.alignRight{ float:right;margin-left: 10px;}
+.alignCenter{ display: block; margin: 0 auto;}
+#page-header{display:none;}
+.maclass{margin-right:10px;}
+#MediaAdminShowForm > div:nth-child(4) > div{float: right;}
