@@ -42,6 +42,28 @@ class PagesController extends AppController {
 	public $uses = array('Post','User');
 
 	public function index(){
+		$d['pages']= $this->Post->find('all',array(
+			'conditions'=> array('ref'=>'page',"Post.name"=>'inicio'
+				)));
+		$this->set($d);
+	}
+/**
+ * [view description]
+ * @param  [type] $slug [description]
+ * @return [type]       [description]
+ */
+	public function view($slug=null) {
+		if(!$slug)
+			throw new NotFoundException(__('Aucune page ne correspond à cet ID'),array('class'=>'danger','type'=>'sign'));
+		$page = $this->Post->find('first',array(
+			'conditions'=>array('slug'=>$slug,'ref'=>'page')
+			));
+		if(empty($page))
+			throw new NotFoundException(__('Aucune page ne correspond à cet ID'),array('class'=>'danger','type'=>'sign'));
+		if($slug != $page['Post']['slug'])
+			$this->redirect($page['Post']['link'],301);
+		$d['page'] = current($page);
+		$this->set($d);
 
 	}
 	public function contact(){

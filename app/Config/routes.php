@@ -27,7 +27,11 @@
  */
 	Router::parseExtensions('rss',"html",'json');
 	//Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
-	Router::connect('/', array('controller' => 'pages', 'action' => 'index'));
+	// Router::connect('/', array('controller' => 'pages', 'action' => 'view',"slug"=>"inicio"));
+	Router::connect('/',array('controller'=>'pages','action'=>'index'));
+	// Router::connect('/inicio', array('controller' => 'pages', 'action' => 'view',"slug"=>"inicio"));
+	Router::connect('/pages/:slug',array('controller'=>'pages','action'=>'view'),array('pass'=>array('slug'),'slug'=>'[a-z0-9\-]+'));
+	Router::connect('/servicios',array('controller'=>'pages','action'=>'view'),array('pass'=>array('slug'),'slug'=>'servicios'));
 	Router::connect('/contact', array('controller' => 'pages', 'action' => 'contact'));
 	Router::connect('/portfolios/:slug',array('controller'=>'portfolios','action'=>'view'),array('pass'=>array('slug'),'slug'=>'[a-z0-9\-]+'));
 /**
