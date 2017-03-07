@@ -11,7 +11,8 @@ module.exports=function(grunt){
 			dist:{
 				files:{
 					//'app/webroot/js/app.min.js': ['node_modules/jquery/dist/jquery.min.js','node_modules/bootstrap-sass/assets/javascripts/bootstrap.js','src/public/*.js'],
-					'app/webroot/js/app.min.js': ['src/jquery.min.js','src/bootstrap.min.js','src/public/*.js'],
+					//'app/webroot/js/app.min.js': ['src/jquery.min.js','src/bootstrap.min.js','src/public/*.js'],
+					'app/webroot/js/app.min.js': ['src/public/*.js'],
 					'app/webroot/js/admin.min.js': ['src/jquery.min.js',"src/bundle.js"],
 					'app/webroot/js/adminAdd.min.js':["src/admin/**/*js"]
 				}

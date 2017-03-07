@@ -21,14 +21,24 @@ class PortfoliosController extends AppController {
 		 'view'=>'2 DAY'
 		);
 
-	public function menu(){
-		$portfolios = $this->Portfolio->find('all',array(
-			'conditions'=>array('online'=>1),
-			'fields'    =>array('slug','name')
-			));
-		return $portfolios;
-	}
-
+	// public function menu(){
+	// 	$this->Portfolio->recursive = 0;
+	// 	$portfolios = $this->Portfolio->find('all',array(
+	// 		'conditions'=>array('online'=>1),
+	// 		'fields'    =>array('slug','name')
+	// 		));
+	// 	return $portfolios;
+	// }
+	// public function sidebar(){
+	// 	return $this->Portfolio->find('all');
+	// }
+public function sidebar() {
+        $portfolios = $this->paginate();
+        if ($this->request->is('requested')) {
+            return $portfolios;
+        }
+        $this->set('portfolios', $portfolios);
+    }
 /**
  * index method
  *
@@ -56,7 +66,7 @@ class PortfoliosController extends AppController {
  */
 
 	public function view($slug) {
-		 $this->layout="portfolio";
+		// $this->layout="portfolio";
 	    if(empty($slug)) {
 	        throw new NotFoundException();
 	    }

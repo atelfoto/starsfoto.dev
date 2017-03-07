@@ -118,6 +118,26 @@ class Portfolio extends AppModel {
 	    }
 	}
 /**
+ * [afterFind nome le controller pour le menu ]
+ * @param  [type]  $data    [description]
+ * @param  boolean $primary [description]
+ * @return [type]           [description]
+ */
+	public function afterFind($data,$primary = false){
+		foreach ($data as $k => $d) {
+			if (isset($d['Portfolio']['slug']) && isset($d['Portfolio']['id'])) {
+				$d['Portfolio']['link'] = array(
+					'controller'     => "portfolios",
+					'action'         =>'view',
+					'slug'           => $d['Portfolio']['slug'],
+					"admin"=>false
+					);
+			}
+			$data[$k] =$d;
+		}
+		return $data;
+	}
+/**
  * [beforeSave duplique sauvegarde le nom de la vue en slug]
  * @param  array  $options [description]
  * @return [type]          [description]

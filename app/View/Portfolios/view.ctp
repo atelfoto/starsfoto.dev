@@ -12,13 +12,13 @@
 <?php echo $this->Html->meta(array('property' => 'og:title', 'type' => 'meta', 'content' => $portfolio['Portfolio']['name']),NULL,array("inline"=>false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:url', 'type' => 'meta', 'content' => "http://www.chateau-chazeron.com/galerie-photos/".$portfolio['Portfolio']['slug'] ),NULL,array("inline"=>false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:image', 'type' => 'meta',
-'content' => "http://www.chateau-chazeron.com/files/portfolio/photo/". $portfolio['Portfolio']['photo_dir']."/". 'port_'.$portfolio['Portfolio']['photo'] ),NULL,array("inline"=>false)); ?>
+'content' => "http://www.".env('HTTP_HOST')."/files/portfolio/photo/". $portfolio['Portfolio']['photo_dir']."/". 'port_'.$portfolio['Portfolio']['photo'] ),NULL,array("inline"=>false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:description', 'type' => 'meta',
  'content' => $this->Text->truncate(strip_tags($portfolio['Portfolio']['content']), 200)),NULL,array("inline"=>false));
 echo $this->Html->meta(array('name' => 'twitter:description','content'=> $this->Text->truncate(strip_tags( $portfolio['Portfolio']['content']), 200)),NULL,array("inline"=>false));
 echo $this->Html->meta(array('name' => 'twitter:card','content'=> "summary_large_image"),NULL,array("inline"=>false));
 echo $this->Html->meta(array('name'=>'twitter:title','content'=> $portfolio['Portfolio']['name']),NULL,array('inline'=>false));
-echo $this->Html->meta(array('name'=>'twitter:url','content'=>"http://www.chateau-chazeron.com/galerie-photos/".$portfolio['Portfolio']['slug'] ),NULL,array('inline'=>false));
+echo $this->Html->meta(array('name'=>'twitter:url','content'=>"http://www.".env('HTTP_HOST')."/galerie-photos/".$portfolio['Portfolio']['slug'] ),NULL,array('inline'=>false));
 echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env('HTTP_HOST')."/files/portfolio/photo/". $portfolio['Portfolio']['photo_dir']."/". 'port_'.$portfolio['Portfolio']['photo'] ),NULL,array("inline"=>false));
  ?>
  	<div id="header-portfolio">
@@ -42,9 +42,7 @@ echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env
  			</div>
 		</div>
 	</div>
-<?php  $this->Html->script(array(
-"jbcore/juicebox",
-"social"), array("inline"=>false)); ?>
+<?php  $this->Html->script(array("jbcore/juicebox","social"), array("inline"=>false)); ?>
 <?php  $this->Html->scriptStart(array("inline"=>false)); ?>
 			new juicebox({
 				baseUrl : '../files/portfolio/<?php echo $portfolio['Portfolio']['slug']; ?>/',

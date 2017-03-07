@@ -37,6 +37,13 @@ class PagesController extends AppController {
  */
 	public $uses = array();
 
+	public function index(){
+
+	}
+	public function contact(){
+
+	}
+
 /**
  * Displays a view
  *

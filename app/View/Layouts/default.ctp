@@ -42,15 +42,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
       <a href="#" class="header__icon" id="header__icon"></a>
       <a href="#" class="header__logo">Logo</a>
       <nav class="menu">
-        <a href="#">item 01</a>
-        <a href="#">item 02</a>
-        <a href="#">item 03</a>
-        <a href="#">item 04</a>
-        <a href="#">item 05</a>
-        <a href="#">item 06</a>
-        <a href="#">item 07</a>
-        <a href="#">item 08</a>
-        <a href="#">item 09</a>
+ 				<?php echo $this->element("sidebar"); ?>
       </nav>
     </header>
     <div class="site-pusher">
@@ -67,7 +59,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     </div>
   </div>
   <?php
-		echo $this->Html->script(array('jquery-1.11.3.min','app'));
+		echo $this->Html->script(array('app.min'));
+		// echo $this->Html->script(array('jquery-1.11.3.min','app.min'));
 		echo $this->fetch('script');
    ?>
 </body>
