@@ -47,6 +47,12 @@ class PagesController extends AppController {
 				)));
 		$this->set($d);
 	}
+	public function servicios(){
+		$d['pages']= $this->Post->find('all',array(
+			'conditions'=> array('ref'=>'page',"Post.name"=>'servicios'
+				)));
+		$this->set($d);
+	}
 /**
  * [view description]
  * @param  [type] $slug [description]

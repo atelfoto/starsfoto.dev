@@ -1,8 +1,9 @@
 @import "compass";
-//@import "public/bootstrap-custom";
+@import "public/bootstrap-custom";
 
 @import "variables";
 @import "compass/layout.scss";
+@import "susy";
 @include sticky-footer(50px, "#container", "#container_footer", "#footer");
 html,body{
 	font-family: $typo-titre;
@@ -16,7 +17,8 @@ html,body{
 a{
 	text-decoration: none;
 	color: inherit;
-}.container{
+}
+.container{
 	margin: 0 20px;
 	@include clearfix;
 }
@@ -34,8 +36,7 @@ a{
 	right: 0;
 	height: 66px;
 	line-height: 66px;
-	color: $couleur-dark;
-	//color: #fff;
+	color: $couleur-white;
 	background-color: $couleur-bg;
 }
 .header__logo{
@@ -74,3 +75,17 @@ a{
     $RESPONSIVE
 \*------------------------------------*/
 @import "responsive";
+
+@media print {
+
+}
+@media (min-width: 970px) {
+	nav.menu{
+		@include container(960px);
+	}
+	.container{
+		@include container(960px);
+
+	}
+
+}

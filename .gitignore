@@ -12,7 +12,9 @@
 /tags
 /node_modules
 /bower_components
-/.sass-cache
+.sass-cache
+app/webroot/sass/.sass-cache
+app/**/.sass-cache/**
 *.mo
 
 # IDE and editor specific files #

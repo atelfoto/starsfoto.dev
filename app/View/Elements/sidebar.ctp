@@ -4,5 +4,5 @@
 <?php  foreach ($portfolios as $k => $v): $v= current($v); ?>
 	<?php  echo $this->Html->link($v['name'],$v['link'], array('escape'=>false)); ?>
 <?php  endforeach ?>
-<?php echo $this->Html->link('servicios', array('controller' => 'pages', 'action' => 'srvicios')); ?>
-<?php echo $this->Html->link('contact', array('controller' => 'pages', 'action' => 'contact')); ?>
+<?php echo $this->Html->link('servicios', array('controller' => 'pages', 'action' => 'servicios')); ?>
+<?php echo $this->Html->link('contact', array('controller' => 'contacts', 'action' => 'index')); ?>

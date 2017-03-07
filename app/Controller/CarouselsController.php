@@ -40,7 +40,7 @@ public function admin_index() {
 	$actionHeading =__('carousel manager');
 	$this->Carousel->recursive = 0;
 	$this->paginate = array('Carousel'=>array(
-		'limit'=>6,
+		'limit'=>10,
 		'order'=>array('Carousel.modified' => 'desc'),
 		));
 	$d['carousels'] = $this->Paginate('Carousel',array(
@@ -241,7 +241,7 @@ public function admin_disable($id=null) {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Carousel->delete()) {
-			$this->Flash->success(__('TThe picture %s has been deleted to your carousel.',h($id)), array('class' => 'alert alert-success'));
+			$this->Flash->success(__('The picture %s has been deleted to your carousel.',h($id)), array('class' => 'alert alert-success'));
 		} else {
 			$this->Flash->error(__('The picture %s could not be deleted. Please, try again.',h($id)), array('class' => 'alert alert-danger'));
 		}

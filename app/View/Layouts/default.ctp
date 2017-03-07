@@ -39,11 +39,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body id="home">
   <div class="site-container">
     <header class="header">
+    <div class="container">
       <a href="#" class="header__icon" id="header__icon"></a>
       <a href="#" class="header__logo">Logo</a>
       <nav class="menu">
  				<?php echo $this->element("sidebar"); ?>
       </nav>
+      </div>
     </header>
     <div class="site-pusher">
       <div class="site-content" >

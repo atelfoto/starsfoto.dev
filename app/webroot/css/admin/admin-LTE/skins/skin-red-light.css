@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'navbar-variant'.
-        on line 10 of D:/wamp/www/production.dev/02-cakePHP/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss, in `navbar-variant'
-        from line 10 of D:/wamp/www/production.dev/02-cakePHP/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss
+        on line 10 of D:/wamp/www/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss, in `navbar-variant'
+        from line 10 of D:/wamp/www/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss
 
 5: 
 6: .skin-red-light {
@@ -16,8 +16,8 @@ Error: Undefined mixin 'navbar-variant'.
 15:         }
 
 Backtrace:
-D:/wamp/www/production.dev/02-cakePHP/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss:10:in `navbar-variant'
-D:/wamp/www/production.dev/02-cakePHP/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss:10
+D:/wamp/www/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss:10:in `navbar-variant'
+D:/wamp/www/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss:10
 D:/Programmes/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 D:/Programmes/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
 D:/Programmes/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
@@ -95,4 +95,4 @@ D:/Programmes/Ruby22/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'navbar-variant'.\A         on line 10 of D:/wamp/www/production.dev/02-cakePHP/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss, in `navbar-variant'\A         from line 10 of D:/wamp/www/production.dev/02-cakePHP/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss\A \A 5: \A 6: .skin-red-light {\A 7:   //Navbar\A 8:   .main-header {\A 9:     .navbar {\A 10:       @include navbar-variant($red, #fff);\A 11:       .sidebar-toggle {\A 12:         color: #fff;\A 13:         &:hover {\A 14:           background-color: darken($red, 5%);\A 15:         }"; }
+  content: "Error: Undefined mixin 'navbar-variant'.\A         on line 10 of D:/wamp/www/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss, in `navbar-variant'\A         from line 10 of D:/wamp/www/starsfoto.dev/app/webroot/sass/admin/admin-LTE/skins/skin-red-light.scss\A \A 5: \A 6: .skin-red-light {\A 7:   //Navbar\A 8:   .main-header {\A 9:     .navbar {\A 10:       @include navbar-variant($red, #fff);\A 11:       .sidebar-toggle {\A 12:         color: #fff;\A 13:         &:hover {\A 14:           background-color: darken($red, 5%);\A 15:         }"; }
