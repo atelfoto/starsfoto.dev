@@ -5,12 +5,12 @@
  		 	echo $this->Html->meta(array('name' => 'robots','content'=>"no index, no follow"),NULL,array("inline"=>false));
  		 }
  ?>
-<?php  echo $this->Html->css(array('portfolio'),array('inline'=>false)); ?>
+<?php // echo $this->Html->css(array('portfolio'),array('inline'=>false)); ?>
 <?php  echo $this->Html->meta('description', $this->Text->truncate(strip_tags($portfolio['Portfolio']['content'], 250)), array(
 'exact' => false,'inline' => false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:type', 'type' => 'meta', 'content' => "website" ),NULL,array("inline"=>false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:title', 'type' => 'meta', 'content' => $portfolio['Portfolio']['name']),NULL,array("inline"=>false)); ?>
-<?php echo $this->Html->meta(array('property' => 'og:url', 'type' => 'meta', 'content' => "http://www.chateau-chazeron.com/galerie-photos/".$portfolio['Portfolio']['slug'] ),NULL,array("inline"=>false)); ?>
+<?php echo $this->Html->meta(array('property' => 'og:url', 'type' => 'meta', 'content' => "http://www.".env('HTTP_HOST')."/galerie-photos/".$portfolio['Portfolio']['slug'] ),NULL,array("inline"=>false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:image', 'type' => 'meta',
 'content' => "http://www.".env('HTTP_HOST')."/files/portfolio/photo/". $portfolio['Portfolio']['photo_dir']."/". 'port_'.$portfolio['Portfolio']['photo'] ),NULL,array("inline"=>false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:description', 'type' => 'meta',
@@ -28,15 +28,15 @@ echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env
  			</a>
  			<div class="pull-right">
  				<button class="share_facebook btn-xs btn btn-primary" style=""
- 						data-url="http://www.chateau-chazeron.com/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
+ 						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
  					<i class="fa fa-facebook hidden-xs fa-1x" style="color:#fff;"></i> <span class="">PARTAGER</span>
  				</button>
  				<button class="share_twitter btn-xs btn btn-info" style="padding:right:5px;padding:left:5px;"
- 						data-url="http://www.chateau-chazeron.com/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
+ 						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
  					<i class="fa fa-twitter hidden-xs " style="color:#fff;"></i> <span class="">TWEETER</span>
  				</button>
  				<button class="share_gplus btn-xs btn btn-danger" style=""
- 						data-url="http://www.chateau-chazeron.com/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
+ 						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
  					<i class="fa fa-google hidden-xs " style="color:#fff;"></i> <span class="">GOOGLE+</span>
  				</button>
  			</div>

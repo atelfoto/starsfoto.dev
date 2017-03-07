@@ -40,20 +40,20 @@ class Portfolio extends AppModel {
  * @var array
  */
 	public $actsAs = array(
-			'Upload.Upload' => array(
+		'Upload.Upload' => array(
 			'photo' => array(
-					'fields' => array(
-						'dir' => 'photo_dir'
+				'fields' => array(
+					'dir' => 'photo_dir'
 					),
-					'thumbnailMethod' => 'php',
-					'thumbnailSizes' => array(
-						"xvga"=>"1024x682",
-						'vga' => '640x426',
-						'port' => '350x233',
-						'thumb' => '150x150'
+				'thumbnailMethod' => 'php',
+				'thumbnailSizes' => array(
+					"xvga"=>"1024x682",
+					'vga' => '640x426',
+					'port' => '350x233',
+					'thumb' => '150x150'
 					),
-					'deleteOnUpdate' => true,
-					'deleteFolderOnDelete' => true
+				'deleteOnUpdate' => true,
+				'deleteFolderOnDelete' => true
 				)
 			)
 		);
