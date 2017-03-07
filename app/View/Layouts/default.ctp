@@ -54,14 +54,18 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         <?php echo $this->fetch('content'); ?>
         <div id='container_footer'></div>
         </div>
-         <footer id="footer">Copyright &copy; 2014-<?php echo date('Y'); ?> <a href=""><?php echo env('HTTP_HOST'); ?> <?php echo $cakeVersion; ?> </p></footer>
+         <footer id="footer">Copyright &copy; 2014-<?php echo date('Y'); ?> <a href=""><?php echo env('HTTP_HOST'); ?> <?php echo $cakeVersion; ?> </p>
+         </footer>
       </div>
 
       <div class="site-cache" id="site-cache"></div>
     </div>
   </div>
   <?php
+  	echo $this->Html->css('');
+		echo $this->fetch('css');
 		echo $this->Html->script(array('app.min'));
+		echo  $this->Html->script('jquery.bxslider.min');
 		// echo $this->Html->script(array('jquery-1.11.3.min','app.min'));
 		echo $this->fetch('script');
    ?>
