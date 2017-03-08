@@ -66,7 +66,7 @@ public function sidebar() {
  */
 
 	public function view($slug) {
-		// $this->layout="portfolio";
+		 $this->layout="portfolio";
 	    if(empty($slug)) {
 	        throw new NotFoundException();
 	    }
