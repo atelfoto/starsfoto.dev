@@ -80,6 +80,9 @@ a{
 
 }
 @media (min-width: 970px) {
+	body{
+			background: url(../img/canvas.png);
+		}
 	nav.menu{
 		@include container(960px);
 	}

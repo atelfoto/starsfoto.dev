@@ -1599,6 +1599,10 @@ footer p {
   }
 }
 @media (min-width: 970px) {
+  body {
+    background: url(../img/canvas.png);
+  }
+
   nav.menu {
     max-width: 960px;
     margin-left: auto;

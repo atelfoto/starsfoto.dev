@@ -41,11 +41,18 @@ module.exports=function(grunt){
 			scss:true,
 			force:true
 		},
+		// dist:{
+		// 	options:{
+		// 		config : 'vendors/fonts/fontello/config.json',
+		// 		fonts  : 'app/webroot/fonts/fontello/',
+		// 		styles : 'app/webroot/sass/fontello/'
+		// 	}
+		// },
 		dist:{
 			options:{
-				config : 'vendors/fonts/fontello/config.json',
-				fonts  : 'app/webroot/fonts/fontello/',
-				styles : 'app/webroot/sass/fontello/'
+				config : 'vendors/fonts/public/fontello/config.json',
+				fonts  : 'app/webroot/fonts/public/fontello/',
+				styles : 'app/webroot/sass/public/fonts/fontello/'
 			}
 		},
 	},
