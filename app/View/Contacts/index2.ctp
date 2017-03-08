@@ -13,7 +13,7 @@ echo $this->Html->meta('canonical', 'http://'.env("HTTP_HOST").'/contact', array
 		'inputDefaults'=>array(
 			'div'=>'form-group',
 			'label'=>array(
-				'class'=>'control-label col-md-3'
+				'class'=>'control-label'
 				),
 			'after'=>'</div>',
 			'error'=>array(
@@ -21,10 +21,9 @@ echo $this->Html->meta('canonical', 'http://'.env("HTTP_HOST").'/contact', array
 					'wrap' => 'span', 'class' => 'help-block text-danger'
 					)
 				),
-			//"wrapInput"=> 'col-md-9',
-			'class'=>'form-control col-md-9'
+			'class'=>'form-control'
 			),
-		'class'=>'well form-horizontal'
+		'class'=>''
 		)
 	);
 	?>

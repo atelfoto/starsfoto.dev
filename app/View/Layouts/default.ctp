@@ -13,7 +13,6 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
 $cakeDescription = __d('cake_dev', 'Stars foto');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
@@ -21,7 +20,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
-	  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>
 		<?php echo $cakeDescription ?>:
 		<?php echo $this->fetch('title'); ?>
@@ -36,33 +35,32 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
 </head>
 <body id="home">
-  <div class="site-container">
-    <header class="header">
-    <div class="container">
-      <a href="#" class="header__icon" id="header__icon"></a>
-      <a href="#" class="header__logo">Logo</a>
-      <nav class="menu">
- 				<?php echo $this->element("sidebar"); ?>
-      </nav>
-      </div>
-    </header>
-    <div class="site-pusher">
-      <div class="site-content" >
-        <div class="container" id="container">
-        <ul class="bxslider">
-        	<?php echo $this->element('slider') ?>
-        </ul>
-        <?php echo $this->Flash->render(); ?>
-        <?php echo $this->fetch('content'); ?>
-        <div id='container_footer'></div>
-        </div>
-         <footer id="footer">Copyright &copy; 2014-<?php echo date('Y'); ?> <a href=""><?php echo env('HTTP_HOST'); ?> <?php echo $cakeVersion; ?> </p>
-         </footer>
-      </div>
-
-      <div class="site-cache" id="site-cache"></div>
-    </div>
-  </div>
+	<div class="site-container">
+		<header class="header">
+			<div class="container">
+				<a href="#" class="header__icon" id="header__icon"></a>
+				<a href="#" class="header__logo">Logo</a>
+				<nav class="menu">
+					<?php echo $this->element("sidebar"); ?>
+				</nav>
+			</div>
+		</header>
+		<div class="site-pusher">
+			<div class="site-content" >
+				<div class="container" id="container">
+					<ul class="bxslider">
+						<?php echo $this->element('slider') ?>
+					</ul>
+					<?php echo $this->Flash->render(); ?>
+					<?php echo $this->fetch('content'); ?>
+					<div id='container_footer'></div>
+				</div>
+				<footer id="footer">Copyright &copy; 2014-<?php echo date('Y'); ?> <a href=""><?php echo env('HTTP_HOST'); ?> <?php echo $cakeVersion; ?></a>
+				</footer>
+			</div>
+			<div class="site-cache" id="site-cache"></div>
+		</div>
+	</div>
   <?php
   	echo $this->Html->css('jquery.bxslider.min');
 		echo $this->fetch('css');

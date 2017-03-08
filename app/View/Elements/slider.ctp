@@ -1,7 +1,7 @@
 <?php  $sliders=$this->requestAction(array('controller'=>'carousels','action'=>'slider','admin'=>false)); ?>
 <?php   foreach ($sliders as $k => $v): $v = current($v); ?>
 	<li>
-		<?php echo  $this->Html->image('/files/carousel/photo/'.$v["photo_dir"].'/'.$v["photo"], array('alt'=> "","width"=>"auto","height"=>"229", "class"=>"center-block")); ?>
+		<?php echo  $this->Html->image('/files/carousel/photo/'.$v["photo_dir"].'/'.$v["photo"], array('alt'=> "stars foto", "class"=>"center-block")); ?>
 	</li>
 <?php   endforeach ?>
 
