@@ -32,7 +32,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('styles');
 		//echo $this->Html->script(array('jquery-1.11.3.min','app'));
 		echo $this->fetch('meta');
-		echo $this->fetch('css');
 	//	echo $this->fetch('script');
 	?>
 </head>
@@ -50,6 +49,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     <div class="site-pusher">
       <div class="site-content" >
         <div class="container" id="container">
+        <ul class="bxslider">
+        	<?php echo $this->element('slider') ?>
+        </ul>
         <?php echo $this->Flash->render(); ?>
         <?php echo $this->fetch('content'); ?>
         <div id='container_footer'></div>
@@ -62,12 +64,21 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     </div>
   </div>
   <?php
-  	echo $this->Html->css('');
+  	echo $this->Html->css('jquery.bxslider.min');
 		echo $this->fetch('css');
 		echo $this->Html->script(array('app.min'));
 		echo  $this->Html->script('jquery.bxslider.min');
-		// echo $this->Html->script(array('jquery-1.11.3.min','app.min'));
-		echo $this->fetch('script');
    ?>
+   <?php $this->Html->scriptStart(array('inline'=>false)); ?>
+   	$(document).ready(function(){
+  		$('.bxslider').bxSlider({
+  		mode: 'fade',
+  		auto: true,
+  		pager:false,
+  		controls:false,
+  		});
+		});
+   <?php $this->Html->scriptEnd(); ?>
+   <?php echo $this->fetch('script'); ?>
 </body>
 </html>

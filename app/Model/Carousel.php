@@ -113,7 +113,7 @@ class Carousel extends AppModel {
 					'thumbnailSizes' => array(
 						"xvga"=>"925x229",
 						'vga' => '640x160',
-						'thumb' => '150x150'
+						'thumb' => '302x75'
 					),
 					'deleteOnUpdate' => true,
 					'deleteFolderOnDelete' => true

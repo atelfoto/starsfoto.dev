@@ -22,15 +22,17 @@ class CarouselsController extends AppController {
  *
  * @return void
  */
-public function index(){
-	$pages = $this->Carousel->find('all'
+public function slider(){
+	$sliders = $this->Carousel->find('all'
 		,array(
 			'conditions'=>array('type'=>'image/jpeg','online'=>1),
 			'fields'    =>array('name','photo','photo_dir','class','content')
 			)
 		);
-	return $pages;
+	return $sliders;
 }
+
+
 /**
  * admin_index method
  *
@@ -97,8 +99,8 @@ public function admin_crop($id=null){
 	$this->set('carousel', $this->Carousel->find('first', $options));
 	if($this->request->is('post')){
 		if (!empty($this->request->data['h'])) {
-			$targ_w = 1900;
-			$targ_h = 694;
+			$targ_w = 925;
+			$targ_h = 229;
 			$targ_x = $this->request->data['x'];
 			$targ_y = $this->request->data['y'];
 			$img= $this->request->data['Carousel']['photo'];
