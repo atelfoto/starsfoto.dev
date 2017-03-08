@@ -1,3 +1,119 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900|Roboto+Condensed|Roboto+Slab);
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/public/fontello/fontello.eot?54569234");
+  src: url("../fonts/public/fontello/fontello.eot?54569234#iefix") format("embedded-opentype"), url("../fonts/public/fontello/fontello.woff2?54569234") format("woff2"), url("../fonts/public/fontello/fontello.woff?54569234") format("woff"), url("../fonts/public/fontello/fontello.ttf?54569234") format("truetype"), url("../fonts/public/fontello/fontello.svg?54569234#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?30586399#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-user:before {
+  content: '\21';
+}
+
+/* '!' */
+.icon-lock:before {
+  content: '\22';
+}
+
+/* '&quot;' */
+.icon-reply-all:before {
+  content: '\23';
+}
+
+/* '#' */
+.icon-right-circled:before {
+  content: '\24';
+}
+
+/* '$' */
+.icon-phone:before {
+  content: '\25';
+}
+
+/* '%' */
+.icon-mobile:before {
+  content: '\26';
+}
+
+/* '&amp;' */
+.icon-ok:before {
+  content: '\27';
+}
+
+/* ''' */
+.icon-left-big:before {
+  content: '\28';
+}
+
+/* '(' */
+.icon-facebook:before {
+  content: '\29';
+}
+
+/* ')' */
+.icon-gplus:before {
+  content: '\2a';
+}
+
+/* '*' */
+.icon-twitter:before {
+  content: '\2b';
+}
+
+/* '+' */
+.icon-twitter-squared:before {
+  content: '\2c';
+}
+
+/* ',' */
+.icon-facebook-squared:before {
+  content: '\2d';
+}
+
+/* '-' */
+.icon-mail:before {
+  content: '\2e';
+}
+
+/* '.' */
 .btn {
   display: inline-block;
   margin-bottom: 0;

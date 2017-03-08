@@ -55,7 +55,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 					<?php echo $this->fetch('content'); ?>
 					<div id='container_footer'></div>
 				</div>
-				<footer id="footer">Copyright &copy; 2014-<?php echo date('Y'); ?> <a href=""><?php echo env('HTTP_HOST'); ?> <?php echo $cakeVersion; ?></a>
+				<footer id="footer">
+				<p>
+				Copyright &copy; 2014-<?php echo date('Y'); ?> <a href=""><?php echo env('HTTP_HOST'); ?></a></p>
 				</footer>
 			</div>
 			<div class="site-cache" id="site-cache"></div>

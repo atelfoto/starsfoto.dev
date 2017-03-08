@@ -1,18 +1,30 @@
 @import "compass";
 @import "public/bootstrap-custom";
 
+@import "public/fonts/fonts";
 @import "variables";
+
 @import "compass/layout.scss";
+@import "public/fonts/fontello/fontello";
 @import "susy";
-@include sticky-footer(50px, "#container", "#container_footer", "#footer");
-html,body{
-	font-family: $typo-titre;
-	font-size: 16px;
-	line-height: 1.4;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
+// $susy:(
+// 	container:960px,
+// 	columns:4,
+// 	gutters:30px/100px,
+// 	gutter-position: inside-static,
+// 	column-width: 100px,
+// 	);
+// $desktop: layout(960px 4 30px/100px inside-static);
+// @include border-box-sizing;
+// @include sticky-footer(50px, "#container", "#container_footer", "#footer");
+// html,body{
+// 	font-family: $typo-titre;
+// 	font-size: 16px;
+// 	line-height: 1.4;
+// 	height: 100%;
+// 	margin: 0;
+// 	padding: 0;
+// }
 
 a{
 	text-decoration: none;
@@ -80,6 +92,9 @@ a{
 
 }
 @media (min-width: 970px) {
+	body{
+		background: url(../img/canvas.png);
+	}
 	nav.menu{
 		@include container(960px);
 	}

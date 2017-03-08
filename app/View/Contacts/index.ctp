@@ -5,8 +5,6 @@ echo $this->Html->meta('canonical', 'http://'.env("HTTP_HOST").'/contact', array
 ); ?>
 <?php $this->Html->addCrumb("contact"); ?>
 <h2>contact</h2>
-
-
 <?php echo $this->Form->create(
 	'Contact',array(
 		'novalidate'=>true,
@@ -31,19 +29,19 @@ echo $this->Html->meta('canonical', 'http://'.env("HTTP_HOST").'/contact', array
 	<fieldset class='text-center'>
 		<?php echo $this->Form->input('name', array('class' => 'form-control',
 			'placeholder' => __('Name'),
-			'between'=>'<div class="input-group"><div class="input-group-addon"><i class="fa fa-user"></i></div>'
+			'between'=>'<div class="input-group"><div class="input-group-addon"><i class="icon-user"></i></div>'
 			));?>
 		<?php echo $this->Form->input('email', array('class' => 'form-control',
 			'placeholder' => __('Your Email'),"type"=>"email",
-			'between'=>'<div class="input-group"><div class="input-group-addon"><i class="fa fa-at"></i></div>'
+			'between'=>'<div class="input-group"><div class="input-group-addon"><i class="icon-mail"></i></div>'
 			));?>
 		<?php echo $this->Form->input('phone', array('class' => 'form-control',
 			'placeholder' => __('Your Phone'),
-			'between'=>'<div class="input-group"><div class="input-group-addon"><i class="fa fa-phone"></i></div>'
+			'between'=>'<div class="input-group"><div class="input-group-addon"><i class="icon-phone"></i></div>'
 			));?>
 		<?php echo $this->Form->input('mobile', array('class' => 'form-control',
 			'placeholder' => __('Your Mobile'),'type'=>'tel',
-			'between'=>'<div class="input-group"><div class="input-group-addon"><i class="fa fa-mobile"></i></div>'
+			'between'=>'<div class="input-group"><div class="input-group-addon"><i class="icon-mobile"></i></div>'
 			));?>
 		<?php echo $this->Form->input('subject', array('class' => 'form-control',
 			'empty'=> __('Choose the subject of your message:'),'type'=>"select",
@@ -67,7 +65,7 @@ echo $this->Html->meta('canonical', 'http://'.env("HTTP_HOST").'/contact', array
 	</fieldset>
 	<div class="text-right">
 		<?php echo $this->Form->button(__('Reset') , array('class'=>"btn btn-default",'type'=>'reset')); ?>
-		<?php echo $this->Form->button(__('Sent').' <i class="fa fa-arrow-circle-right"></i>',
+		<?php echo $this->Form->button(__('Sent').' <i class="icon-right-circled"></i>',
 		array('type'=>"submit","class"=>"btn btn-primary","escape"=>false)); ?>
 	</div>
 <?= $this->Form->end(); ?>
