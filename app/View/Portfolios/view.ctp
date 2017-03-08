@@ -10,7 +10,7 @@
 'exact' => false,'inline' => false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:type', 'type' => 'meta', 'content' => "website" ),NULL,array("inline"=>false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:title', 'type' => 'meta', 'content' => $portfolio['Portfolio']['name']),NULL,array("inline"=>false)); ?>
-<?php echo $this->Html->meta(array('property' => 'og:url', 'type' => 'meta', 'content' => "http://www.".env('HTTP_HOST')."/galerie-photos/".$portfolio['Portfolio']['slug'] ),NULL,array("inline"=>false)); ?>
+<?php echo $this->Html->meta(array('property' => 'og:url', 'type' => 'meta', 'content' => "http://www.".env('HTTP_HOST')."/galeria/".$portfolio['Portfolio']['slug'] ),NULL,array("inline"=>false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:image', 'type' => 'meta',
 'content' => "http://www.".env('HTTP_HOST')."/files/portfolio/photo/". $portfolio['Portfolio']['photo_dir']."/". 'port_'.$portfolio['Portfolio']['photo'] ),NULL,array("inline"=>false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:description', 'type' => 'meta',
@@ -18,13 +18,12 @@
 echo $this->Html->meta(array('name' => 'twitter:description','content'=> $this->Text->truncate(strip_tags( $portfolio['Portfolio']['content']), 200)),NULL,array("inline"=>false));
 echo $this->Html->meta(array('name' => 'twitter:card','content'=> "summary_large_image"),NULL,array("inline"=>false));
 echo $this->Html->meta(array('name'=>'twitter:title','content'=> $portfolio['Portfolio']['name']),NULL,array('inline'=>false));
-echo $this->Html->meta(array('name'=>'twitter:url','content'=>"http://www.".env('HTTP_HOST')."/galerie-photos/".$portfolio['Portfolio']['slug'] ),NULL,array('inline'=>false));
+echo $this->Html->meta(array('name'=>'twitter:url','content'=>"http://www.".env('HTTP_HOST')."/galeria/".$portfolio['Portfolio']['slug'] ),NULL,array('inline'=>false));
 echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env('HTTP_HOST')."/files/portfolio/photo/". $portfolio['Portfolio']['photo_dir']."/". 'port_'.$portfolio['Portfolio']['photo'] ),NULL,array("inline"=>false));
  ?>
- 	<div id="header-portfolio">
- 		<div class="container">
+ 	<div id="header-portfolio" class="container">
  			<a title="Retour Galeries" data-placement="bottom" class="infobulle" data-toogle='tooltip'   href=" <?php echo $this->Html->url(array('controller' => 'portfolios', 'action' => 'index')); ?>">
- 				<i class="fa fa-arrow-left  fa-2x" style="background-color:transparent;color:#fff;"></i>
+ 				<i class="fa fa-arrow-left  fa-2x" style="background-color:transparent;color:#fff;">fleche</i>
  			</a>
  			<div class="pull-right">
  				<button class="share_facebook btn-xs btn btn-primary" style=""
@@ -40,7 +39,6 @@ echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env
  					<i class="fa fa-google hidden-xs " style="color:#fff;"></i> <span class="">GOOGLE+</span>
  				</button>
  			</div>
-		</div>
 	</div>
 <?php  $this->Html->script(array("jbcore/juicebox","social"), array("inline"=>false)); ?>
 <?php  $this->Html->scriptStart(array("inline"=>false)); ?>
@@ -57,7 +55,7 @@ echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env
 				containerId: "juicebox-container",
 				galleryHeight: "90%",
 				galleryWidth: "100%",
-				top:"150px"
+			//	top:"100px"
 			});
 			$(document).ready(function(){
 			 $("a.infobulle").mouseover(function(){
@@ -66,5 +64,6 @@ echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env
 			});
 <?php  $this->Html->scriptEnd(); ?>
 <div class="container">
-<div id="juicebox-container" ></div></div>
+	<div id="juicebox-container" ></div>
+</div>
 
