@@ -23,19 +23,19 @@ echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env
  ?>
  	<div id="header-portfolio" class="container">
  			<a title="Retour Galeries" data-placement="bottom" class="infobulle" data-toogle='tooltip'   href=" <?php echo $this->Html->url(array('controller' => 'portfolios', 'action' => 'index')); ?>">
- 				<i class="icon-left-big fa-2x" style="background-color:transparent;color:#fff;"></i>
+ 				<i class="icon-left-big " style="background-color:transparent;color:#fff;"></i>
  			</a>
  			<div class="pull-right">
  				<button class="share_facebook btn-xs btn btn-primary" style=""
- 						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
+ 						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galeria/<?php echo $portfolio['Portfolio']['slug']; ?>">
  					<i class="icon-facebook hidden-xs fa-1x" style="color:#fff;"></i> <span class="">PARTAGER</span>
  				</button>
  				<button class="share_twitter btn-xs btn btn-info" style="padding:right:5px;padding:left:5px;"
- 						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
+ 						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galeria/<?php echo $portfolio['Portfolio']['slug']; ?>">
  					<i class="icon-twitter hidden-xs " style="color:#fff;"></i> <span class="">TWEETER</span>
  				</button>
  				<button class="share_gplus btn-xs btn btn-danger" style=""
- 						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
+ 						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galeria/<?php echo $portfolio['Portfolio']['slug']; ?>">
  					<i class="icon-gplus hidden-xs " style="color:#fff;"></i> <span class="">GOOGLE+</span>
  				</button>
  			</div>

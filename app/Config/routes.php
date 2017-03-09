@@ -26,11 +26,8 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	Router::parseExtensions('rss',"html",'json');
-	//Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
-	// Router::connect('/', array('controller' => 'pages', 'action' => 'view',"slug"=>"inicio"));
 	Router::connect('/',array('controller'=>'pages','action'=>'index'));
 	Router::connect('/servicios',array('controller'=>'pages','action'=>'servicios'));
-	// Router::connect('/inicio', array('controller' => 'pages', 'action' => 'view',"slug"=>"inicio"));
 	Router::connect('/pages/:slug',array('controller'=>'pages','action'=>'view'),array('pass'=>array('slug'),'slug'=>'[a-z0-9\-]+'));
 
 	Router::connect('/contact', array('controller' => 'contacts', 'action' => 'index'));

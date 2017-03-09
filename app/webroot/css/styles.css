@@ -1538,16 +1538,16 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: -50px;
+  margin-bottom: -150px;
 }
 #container #container_footer {
-  height: 50px;
+  height: 150px;
 }
 
 #footer {
   clear: both;
   position: relative;
-  height: 50px;
+  height: 150px;
 }
 
 *, *:before, *:after {
@@ -1626,11 +1626,11 @@ div.page-header {
   text-transform: uppercase !important;
   text-align: center;
 }
-div.page-header h1 {
+div.page-header h1, div.page-header h2 {
   text-align: center;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.6em;
   display: block;
-  font-size: 2em;
+  font-size: 2.1em;
   margin-bottom: 0px;
   line-height: 2em;
   font-weight: bold;
@@ -1638,10 +1638,10 @@ div.page-header h1 {
 div.page-header small {
   color: #999999;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
-.home p {
+.home p, .servicios ul {
   font-style: italic;
   font-size: 1.2em;
   font-family: "Roboto Condensed", sans-serif;
@@ -1770,7 +1770,7 @@ footer p {
     background-color: rgba(0, 0, 0, 0.6);
   }
 
-  label, p {
+  #ContactIndexForm label, #ContactIndexForm p {
     visibility: hidden;
   }
 }
@@ -1821,12 +1821,24 @@ footer p {
   }
 
   .home p {
-    font-style: italic;
-    font-size: 1.2em;
-    margin-left: 10em !important;
-    line-height: 1.6em !important;
+    margin-left: 10em;
     margin-right: 10em;
+    line-height: 1.6em !important;
     text-align: center;
+  }
+
+  .servicios {
+    min-height: 45em;
+    margin-top: 3em;
+  }
+  .servicios ul {
+    margin-left: 4.5em;
+    margin-right: 4.5em;
+    text-align: justify;
+    list-style-type: disc;
+  }
+  .servicios ul li {
+    line-height: 2em;
   }
 
   /*------------------------------------*\
@@ -1854,6 +1866,9 @@ footer p {
     margin-right: 1.69492%;
   }
   #ContactIndexForm .text-right {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
     float: right;
     position: relative;
     top: -50px;

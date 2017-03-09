@@ -1,17 +1,17 @@
 <?= $this->assign('title', __('photo gallery')); ?>
 <?php echo $this->Html->meta(array('name' => 'robots', 'content' => "index , follow"),NULL,array("inline"=>false));
 echo $this->Html->meta("description", $this->Text->truncate(strip_tags( $menus['Menu']["description"]), 160), array('inline'=>false));
-echo $this->Html->meta('canonical', 'http://www.chateau-chazeron.com/galerie-photos', array('rel'=>'canonical', 'type'=>null, 'title'=>null, 'inline' => false));
+echo $this->Html->meta('canonical', 'http://www.'.env("HTTP_HOST").'/galerias', array('rel'=>'canonical', 'type'=>null, 'title'=>null, 'inline' => false));
 echo $this->Html->meta(array('property' => 'og:type', 'type' => 'meta', 'content' => "website" ),NULL,array("inline"=>false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:title', 'type' => 'meta', 'content' => "galerie photos"),NULL,array("inline"=>false)); ?>
-<?php echo $this->Html->meta(array('property' => 'og:url', 'type' => 'meta', 'content' => "http://www.chateau-chazeron.com/galerie-photos" ),NULL,array("inline"=>false)); ?>
-<?php echo $this->Html->meta(array('property' => 'og:image', 'type' => 'meta','content' => "http://www.chateau-chazeron.com/img/screenshoot/screenshoot-gp.jpg" ),NULL,array("inline"=>false)); ?>
+<?php echo $this->Html->meta(array('property' => 'og:url', 'type' => 'meta', 'content' => "http://www.".env("HTTP_HOST")."/galerias" ),NULL,array("inline"=>false)); ?>
+<?php echo $this->Html->meta(array('property' => 'og:image', 'type' => 'meta','content' => "http://www.".env("HTTP_HOST")."/img/screenshoot/screenshoot-gp.jpg" ),NULL,array("inline"=>false)); ?>
 <?php echo $this->Html->meta(array('property' => 'og:description', 'type' => 'meta',
  'content' => $this->Text->truncate(strip_tags( $menus['Menu']["description"]), 200)),NULL,array("inline"=>false));
 echo $this->Html->meta(array('name' => 'twitter:description','content'=> $this->Text->truncate(strip_tags( $menus['Menu']["description"]), 200)),NULL,array("inline"=>false));
 echo $this->Html->meta(array('name' => 'twitter:card','content'=> "summary_large_image"),NULL,array("inline"=>false));
 echo $this->Html->meta(array('name'=>'twitter:title','content'=> __("photo gallery")),NULL,array('inline'=>false));
-echo $this->Html->meta(array('name'=>'twitter:url','content'=>"http://www.chateau-chazeron.com/galerie-photos" ),NULL,array('inline'=>false));
+echo $this->Html->meta(array('name'=>'twitter:url','content'=>"http://www.".env("HTTP_HOST")."/galerias" ),NULL,array('inline'=>false));
 echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env('HTTP_HOST')."/img/screenshoot/screenshoot-gp.jpg"),NULL,array("inline"=>false));
   ?>
 <?php $this->Html->addCrumb(__('photo gallery'));?>
@@ -19,7 +19,7 @@ echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env
 <?php if ($this->request->is('mobile')): ?>
 	<div class="row">
 	<?php  foreach ($portfolios as $portfolio): ?>
-			<a href="<?php  echo $this->Html->url('/galerie-photos/'.$portfolio['Portfolio'] ['slug'] ); ?>"  style="padding:0;margin:0;" class="list-group-item"  title="voir cet article">
+			<a href="<?php  echo $this->Html->url('/galeria/'.$portfolio['Portfolio'] ['slug'] ); ?>"  style="padding:0;margin:0;" class="list-group-item"  title="voir cet article">
 				<div class="media">
 					<div class="media-left">
 						<?=   $this->Html->image("../files/portfolio/photo/". $portfolio['Portfolio']['photo_dir']."/". 'thumb_'. $portfolio['Portfolio']['photo'],
@@ -32,12 +32,12 @@ echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env
 						<p class="list-group-item-text media-heading text-capitalize">
 							<span class='date'>
 								<small>
-									<i class="fa fa-calendar">&nbsp;</i>&nbsp;<?php echo __('published') ?> :&nbsp;
+									<i class="icon-calendar">&nbsp;</i>&nbsp;<?php echo __('published') ?> :&nbsp;
 									<?php  echo $this->Time->format($portfolio['Portfolio']['created'], '%a %e %B, %Y %z '); ?><br>
 								</small>
 							</span>
 		  					<span style="padding-top:10px;">
-		  						<?php  empty($portfolio['Portfolio']['photographer']) ? " " : '<i class="fa fa-user"></i> '. __('photographer')."(s) :" ; ?>
+		  						<?php  empty($portfolio['Portfolio']['photographer']) ? " " : '<i class="icon-user"></i> '. __('photographer')."(s) :" ; ?>
 		  					</span>
 						</p>
 						<p>
@@ -60,11 +60,11 @@ echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env
 		  		<p class="text-center small" style="min-height:40px;"><?php  echo h($portfolio['Portfolio']['subtitle']); ?> <br>
 		  			<span class='date'>
 		  				<small>
-		  					<i class="fa fa-calendar">&nbsp;</i>&nbsp;
+		  					<i class="icon-calendar">&nbsp;</i>&nbsp;
 		  					<?php echo __('published') ?> :&nbsp;
 		  					<?php echo $this->Time->format($portfolio['Portfolio']['created'] , "%e %B, %Y"); ?> <br />
 		  					<span style="min-width:400px;">
-		  						<i class="fa fa-user"></i>
+		  						<i class="icon-user"></i>
 		  						<?php echo __('photographer'); ?>(s) :&nbsp;<?php  echo h($portfolio['Portfolio']['photographer']); ?>
 		  					</span>
 		  				</small>

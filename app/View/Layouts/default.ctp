@@ -22,7 +22,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php echo $this->Html->charset(); ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>
-		<?php echo $cakeDescription ?>:
+		<?php  echo $cakeDescription ?>:
 		<?php echo $this->fetch('title'); ?>
 	</title>
 	<?php
@@ -55,9 +55,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 					<div class="main">
 						<?php echo $this->fetch('content'); ?>
 					</div>
-					<div id='container_footer' style="height: 100px;"></div>
+					<div id='container_footer' style="height: 150px;"></div>
 				</div>
-				<footer id="footer">Copyright &copy; 2014-<?php echo date('Y'); ?> <a href=""><?php echo env('HTTP_HOST'); ?> <?php echo $cakeVersion; ?></a>
+				<footer class="footer text-center" id="footer">
+				<?php echo $this->element('footer') ?>
 				</footer>
 			</div>
 			<div class="site-cache" id="site-cache"></div>

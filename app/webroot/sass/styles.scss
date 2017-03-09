@@ -6,12 +6,11 @@
 @import "public/fonts-style";
 @import "public/fonts/fontello/fontello";
 @import "susy";
-@include sticky-footer(50px, "#container", "#container_footer", "#footer");
+@include sticky-footer(150px, "#container", "#container_footer", "#footer");
 $susy: (
   columns: 12,   // On indique à Susy d'utiliser 12 colonnes
   global-box-sizing: border-box   // Utiliser border-box
   );
-
 // on inclut les propriétés border-box
 @include border-box-sizing;
 html,body{
@@ -73,15 +72,14 @@ a{
 /*------------------------------------*\
     $page header
 \*------------------------------------*/
-
 div.page-header{
 	text-transform: uppercase!important;
 	text-align: center;
-	h1{
+	h1,h2{
 		text-align: center;
-		letter-spacing: 0.5em;
+		letter-spacing: 0.6em;
 		display: block;
-		font-size: 2em;
+		font-size: 2.1em;
 		margin-bottom: 0px;
 		line-height: 2em;
 		font-weight: bold;
@@ -89,14 +87,15 @@ div.page-header{
 	small{
 			color: $couleur-grey;
 			text-align: center;
-			font-size: 1.3em;
+			font-size: 1.2em;
 		}
 }
-.home p{
+.home p, .servicios ul{
 	font-style: italic;
 	font-size: 1.2em;
 	font-family: $typo-texte;
 }
+
 
 /*------------------------------------*\
     $FOOTER
@@ -175,13 +174,26 @@ div.page-header{
 			letter-spacing: 1.1em;
 		}
 	}
+
 	.home p{
-		font-style: italic;
-		font-size: 1.2em;
-		margin-left: 10em!important;
-		line-height: 1.6em!important;
+		margin-left: 10em;
 		margin-right: 10em;
+		line-height: 1.6em!important;
 		text-align: center;
+	}
+
+	.servicios{
+		min-height: 45em;
+		margin-top:3em;
+		ul {
+			margin-left: 4.5em;
+			margin-right: 4.5em;
+			text-align: justify;
+			list-style-type: disc;
+			li{
+				line-height: 2em;
+			}
+		}
 	}
 /*------------------------------------*\
     $CONTACT
@@ -204,6 +216,7 @@ div.page-header{
 
 	}
 	.text-right{
+		@include span(3 );
 		float: right;
 		position: relative;
 		top: -50px;

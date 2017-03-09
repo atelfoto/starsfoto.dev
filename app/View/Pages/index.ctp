@@ -1,4 +1,8 @@
-<?php  echo $this->assign('title', __('home')); ?>
+<?php  echo $this->assign('title', __('home'));
+echo $this->Html->meta('canonical', 'http:www.//'.env("HTTP_HOST"), array('rel'=>'canonical', 'type'=>null, 'title'=>null, 'inline' => false)
+);
+?>
+
 <div class="page-header">
 	<h1>starsfoto </h1><br />
 	<small>antonio rivas casado photographer <br />

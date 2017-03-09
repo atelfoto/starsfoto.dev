@@ -1,12 +1,12 @@
-<?= $this->assign('title', __('Contact Us')); ?>
+<?= $this->assign('title', __('Contact ')); ?>
 <?php echo $this->Html->meta(array('name' => 'robots', 'content' => "index , follow"),NULL,array("inline"=>false)); ?>
-<?php  $this->Html->meta('description', "Si vous avez des questions, n'hésitez pas à nous contacter." , array('inline'=> false));
+<?php  $this->Html->meta('description', __("Para consultar una cita o cualquier duda pongase en contacto con nosotros!.") , array('inline'=> false));
 echo $this->Html->meta('canonical', 'http://'.env("HTTP_HOST").'/contact', array('rel'=>'canonical', 'type'=>null, 'title'=>null, 'inline' => false)
 ); ?>
 <?php $this->Html->addCrumb("contact"); ?>
-<h2>contact</h2>
-
-
+<div class="page-header">
+	<h2>contact</h2>
+</div>
 <?php echo $this->Form->create(
 	'Contact',array(
 		'novalidate'=>true,
@@ -21,7 +21,6 @@ echo $this->Html->meta('canonical', 'http://'.env("HTTP_HOST").'/contact', array
 					'wrap' => 'span', 'class' => 'help-block text-danger'
 					)
 				),
-			//"wrapInput"=> 'col-md-9',
 			'class'=>'form-control col-md-9'
 			),
 		'class'=>'well form-horizontal'
