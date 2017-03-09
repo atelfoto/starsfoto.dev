@@ -29,6 +29,8 @@ echo $this->Html->meta('canonical', 'http://'.env("HTTP_HOST").'/contact', array
 	);
 	?>
 	<fieldset class='text-center'>
+		<label for="">&nbsp;</label>
+		<p class='text-left'><i class="icon-asterisk">*</i>&nbsp;<?= __('Required field:'); ?></p>
 		<?php echo $this->Form->input('name', array('class' => 'form-control',
 			'placeholder' => __('Name'),
 			'between'=>'<div class="input-group"><div class="input-group-addon"><i class="icon-user"></i></div>'
@@ -63,7 +65,6 @@ echo $this->Html->meta('canonical', 'http://'.env("HTTP_HOST").'/contact', array
 		<?php echo $this->Form->input('website', array('class' => 'form-control website',
 			"after"=>false,'label'=>false
 			));?>
-		<p class='text-left'><i class="icon-asterisk"></i>&nbsp;<?= __('Required field:'); ?></p>
 	</fieldset>
 	<div class="text-right">
 		<?php echo $this->Form->button(__('Reset') , array('class'=>"btn btn-default",'type'=>'reset')); ?>

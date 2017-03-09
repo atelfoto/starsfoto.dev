@@ -7,6 +7,13 @@
 @import "public/fonts/fontello/fontello";
 @import "susy";
 @include sticky-footer(50px, "#container", "#container_footer", "#footer");
+$susy: (
+  columns: 12,   // On indique à Susy d'utiliser 12 colonnes
+  global-box-sizing: border-box   // Utiliser border-box
+  );
+
+// on inclut les propriétés border-box
+@include border-box-sizing;
 html,body{
 	font-family: $typo-titre;
 	font-size: 16px;
@@ -117,8 +124,8 @@ div.page-header{
 	visibility: hidden;
 
 }
-div.contact-form{
-	padding-top:50px;
+#ContactIndexForm{
+//	padding-top:50px;
 	fieldset div {
 		label{
 			text-transform: capitalize;
@@ -176,6 +183,36 @@ div.contact-form{
 		margin-right: 10em;
 		text-align: center;
 	}
+/*------------------------------------*\
+    $CONTACT
+\*------------------------------------*/
+
+#ContactIndexForm{
+	label{
+		@include span(2);
+
+	}
+	.input-group{
+		@include span(8 );
+	}
+	span.help-block.text-danger{
+		color: #f00;
+		@include span(8 );
+	}
+	textarea.form-control {
+		@include span(8 );
+
+	}
+	.text-right{
+		float: right;
+		position: relative;
+		top: -50px;
+	}
+	p i{
+		color: #f00;
+	//	@include span(9 last);
+	}
+}
 	@import "public/bootstrap/wells";
 
 }

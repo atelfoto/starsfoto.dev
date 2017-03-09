@@ -1550,6 +1550,12 @@ html, body {
   height: 50px;
 }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html, body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -1665,13 +1671,10 @@ footer p {
   visibility: hidden;
 }
 
-div.contact-form {
-  padding-top: 50px;
-}
-div.contact-form fieldset div label {
+#ContactIndexForm fieldset div label {
   text-transform: capitalize;
 }
-div.contact-form fieldset div.required label:after {
+#ContactIndexForm fieldset div.required label:after {
   color: #e32;
   content: ' *';
   display: inline;
@@ -1746,7 +1749,7 @@ div.contact-form fieldset div.required label:after {
   }
   .menu a {
     display: block;
-    height: 40px;
+    height: 60px;
     text-align: center;
     line-height: 40px;
     border-bottom: 1px solid #4d4d4d;
@@ -1767,7 +1770,7 @@ div.contact-form fieldset div.required label:after {
     background-color: rgba(0, 0, 0, 0.6);
   }
 
-  label {
+  label, p {
     visibility: hidden;
   }
 }
@@ -1824,6 +1827,39 @@ div.contact-form fieldset div.required label:after {
     line-height: 1.6em !important;
     margin-right: 10em;
     text-align: center;
+  }
+
+  /*------------------------------------*\
+      $CONTACT
+  \*------------------------------------*/
+  #ContactIndexForm label {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  #ContactIndexForm .input-group {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  #ContactIndexForm span.help-block.text-danger {
+    color: #f00;
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  #ContactIndexForm textarea.form-control {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  #ContactIndexForm .text-right {
+    float: right;
+    position: relative;
+    top: -50px;
+  }
+  #ContactIndexForm p i {
+    color: #f00;
   }
 
   .well {
