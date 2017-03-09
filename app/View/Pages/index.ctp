@@ -1,12 +1,18 @@
+<?php  echo $this->assign('title', __('home')); ?>
+<div class="page-header">
+	<h1>starsfoto </h1><br />
+	<small>antonio rivas casado photographer <br />
+	 	marbella
+	 </small>
+</div>
 <?php foreach ($pages as $page): ?>
-	<h2> <?php echo $page['Post']['name'] ?></h2>
-	<div>
-		<?php echo $page['Post']['content'] ?>
-	</div>
-
+<div class="home">
+	<?php echo $page['Post']['content'] ?>
+</div>
 <?php endforeach ?>
 <div id="map" class="map " style="height: 500px;padding-left: 0;padding-right: 0;"></div>
 <div class="clearfix"></div>
+
 <?php echo $this->Html->script("https://maps.google.com/maps/api/js?key=AIzaSyB7l-WdKiQTz6zJB6131bqk3oVeS9p6HwA",array('inline'=>false)); ?>
 <?= $this->Html->scriptStart(array('inline' => false)); ?>
 jQuery(function ($) {

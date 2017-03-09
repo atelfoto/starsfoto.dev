@@ -2,6 +2,10 @@
 @import "susy";
 @import "public/bootstrap/variables";
 @import "public/bootstrap/mixins";
+
+@import "public/fonts-style";
+@import "public/fonts/fontello/fontello";
+
 @import "public/bootstrap/buttons";
 @import "public/bootstrap/alerts";
 body{

@@ -21,10 +21,10 @@ module.exports=function(grunt){
 		sass: {
 			dist: {
 				options: {
-					//style: 'compressed',
+					style: 'compressed',
 					compass:true,
 					// sourcemap: 'none',
-					style: 'expanded',
+					//style: 'expanded',
       				require: 'susy'
 				},
 				files: [{ // C'est ici que l'on définit le dossier que l'on souhaite importer

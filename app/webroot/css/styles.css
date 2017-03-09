@@ -1414,6 +1414,121 @@ input[type="button"].btn-block {
   color: #843534;
 }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/public/fontello/fontello.eot?21155624");
+  src: url("../fonts/public/fontello/fontello.eot?21155624#iefix") format("embedded-opentype"), url("../fonts/public/fontello/fontello.woff2?21155624") format("woff2"), url("../fonts/public/fontello/fontello.woff?21155624") format("woff"), url("../fonts/public/fontello/fontello.ttf?21155624") format("truetype"), url("../fonts/public/fontello/fontello.svg?21155624#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?21155624#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-user:before {
+  content: '\21';
+}
+
+/* '!' */
+.icon-lock:before {
+  content: '\22';
+}
+
+/* '&quot;' */
+.icon-reply-all:before {
+  content: '\23';
+}
+
+/* '#' */
+.icon-right-circled:before {
+  content: '\24';
+}
+
+/* '$' */
+.icon-phone:before {
+  content: '\25';
+}
+
+/* '%' */
+.icon-mobile:before {
+  content: '\26';
+}
+
+/* '&amp;' */
+.icon-ok:before {
+  content: '\27';
+}
+
+/* ''' */
+.icon-left-big:before {
+  content: '\28';
+}
+
+/* '(' */
+.icon-facebook:before {
+  content: '\29';
+}
+
+/* ')' */
+.icon-gplus:before {
+  content: '\2a';
+}
+
+/* '*' */
+.icon-twitter:before {
+  content: '\2b';
+}
+
+/* '+' */
+.icon-twitter-squared:before {
+  content: '\2c';
+}
+
+/* ',' */
+.icon-facebook-squared:before {
+  content: '\2d';
+}
+
+/* '-' */
+.icon-mail:before {
+  content: '\2e';
+}
+
+/* '.' */
 html, body {
   height: 100%;
 }
@@ -1474,7 +1589,8 @@ a {
   height: 66px;
   line-height: 66px;
   color: white;
-  background-color: #2e7d32;
+  background-color: #4d4d4d;
+  z-index: 200;
 }
 
 .header__logo {
@@ -1488,6 +1604,7 @@ a {
 \*------------------------------------*/
 .menu {
   float: left;
+  text-transform: capitalize;
 }
 .menu a {
   padding: 010px;
@@ -1496,11 +1613,43 @@ a {
   color: #c6ff00;
 }
 
+/*------------------------------------*\
+    $page header
+\*------------------------------------*/
+div.page-header {
+  text-transform: uppercase !important;
+  text-align: center;
+}
+div.page-header h1 {
+  text-align: center;
+  letter-spacing: 0.5em;
+  display: block;
+  font-size: 2em;
+  margin-bottom: 0px;
+  line-height: 2em;
+  font-weight: bold;
+}
+div.page-header small {
+  color: #999999;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.home p {
+  font-style: italic;
+  font-size: 1.2em;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
 footer {
-  background: rgba(0, 0, 0, 0.64);
+  background-color: #4d4d4d;
   bottom: 0px;
   margin-bottom: 0;
   text-align: center;
+  color: white;
 }
 footer p {
   padding: 5px;
@@ -1510,9 +1659,28 @@ footer p {
 }
 
 /*------------------------------------*\
+    $contact
+\*------------------------------------*/
+.website {
+  visibility: hidden;
+}
+
+div.contact-form {
+  padding-top: 50px;
+}
+div.contact-form fieldset div label {
+  text-transform: capitalize;
+}
+div.contact-form fieldset div.required label:after {
+  color: #e32;
+  content: ' *';
+  display: inline;
+}
+
+/*------------------------------------*\
     $RESPONSIVE
 \*------------------------------------*/
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
   .site-container {
     height: 100%;
   }
@@ -1545,6 +1713,7 @@ footer p {
 
   .header {
     position: static;
+    z-index: 200;
   }
 
   .header__icon {
@@ -1572,7 +1741,7 @@ footer p {
     left: 0;
     top: 66px;
     bottom: 0;
-    background-color: #276a2b;
+    background-color: #404040;
     width: 250px;
   }
   .menu a {
@@ -1580,7 +1749,7 @@ footer p {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    border-bottom: 1px solid #2e7d32;
+    border-bottom: 1px solid #4d4d4d;
   }
 
   .with--sidebar .site-pusher {
@@ -1597,10 +1766,19 @@ footer p {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
   }
+
+  label {
+    visibility: hidden;
+  }
 }
 @media (min-width: 970px) {
   body {
     background: url(../img/canvas.png);
+  }
+
+  .header {
+    border-bottom: 2px solid #f00;
+    box-shadow: 0px 9px 13px 0px rgba(50, 50, 50, 0.75);
   }
 
   nav.menu {
@@ -1623,5 +1801,53 @@ footer p {
     content: " ";
     display: block;
     clear: both;
+  }
+
+  #container {
+    background-color: white;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 3px 3px 76px -21px rgba(0, 0, 0, 0.75);
+  }
+
+  .page-header h1 {
+    margin-top: 0px;
+    letter-spacing: 1.1em;
+  }
+
+  .home p {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-left: 10em !important;
+    line-height: 1.6em !important;
+    margin-right: 10em;
+    text-align: center;
+  }
+
+  .well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  }
+  .well blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .well-lg {
+    padding: 24px;
+    border-radius: 6px;
+  }
+
+  .well-sm {
+    padding: 9px;
+    border-radius: 3px;
   }
 }

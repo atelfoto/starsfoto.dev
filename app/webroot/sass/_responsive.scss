@@ -1,4 +1,4 @@
-@media only screen and(max-width: 750px){
+@media only screen and(max-width: 768px){
 	.site-container,
 	//site-puscher
 	{
@@ -26,6 +26,7 @@
 	}
 	.header{
 		position: static;
+		z-index: 200;
 	}
 	.header__icon{
 		position: relative;
@@ -52,7 +53,7 @@
 		left: 0;
 		top: 66px;
 		bottom: 0;
-		background-color: darken($couleur-bg, 5);
+		background-color: darken($couleur-dark, 5);
 		width: $menu-width;
 		// @include transform(translateX($menu-width * -1));
 
@@ -62,7 +63,7 @@
 
 			text-align: center;
 			line-height: 40px;
-			border-bottom: 1px solid $couleur-bg;
+			border-bottom: 1px solid $couleur-dark;
 
 		}
 
@@ -80,6 +81,10 @@
 			background-color: rgba(0,0,0,0.6);
 		}
 
+	}
+
+	label{
+		visibility: hidden;
 	}
 
 }

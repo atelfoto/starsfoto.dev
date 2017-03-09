@@ -23,20 +23,20 @@ echo $this->Html->meta(array('name' => 'twitter:image','content' =>"http://".env
  ?>
  	<div id="header-portfolio" class="container">
  			<a title="Retour Galeries" data-placement="bottom" class="infobulle" data-toogle='tooltip'   href=" <?php echo $this->Html->url(array('controller' => 'portfolios', 'action' => 'index')); ?>">
- 				<i class="fa fa-arrow-left  fa-2x" style="background-color:transparent;color:#fff;">fleche</i>
+ 				<i class="icon-left-big fa-2x" style="background-color:transparent;color:#fff;"></i>
  			</a>
  			<div class="pull-right">
  				<button class="share_facebook btn-xs btn btn-primary" style=""
  						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
- 					<i class="fa fa-facebook hidden-xs fa-1x" style="color:#fff;"></i> <span class="">PARTAGER</span>
+ 					<i class="icon-facebook hidden-xs fa-1x" style="color:#fff;"></i> <span class="">PARTAGER</span>
  				</button>
  				<button class="share_twitter btn-xs btn btn-info" style="padding:right:5px;padding:left:5px;"
  						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
- 					<i class="fa fa-twitter hidden-xs " style="color:#fff;"></i> <span class="">TWEETER</span>
+ 					<i class="icon-twitter hidden-xs " style="color:#fff;"></i> <span class="">TWEETER</span>
  				</button>
  				<button class="share_gplus btn-xs btn btn-danger" style=""
  						data-url="http://www.<?php echo env('HTTP_HOST'); ?>/galerie-photos/<?php echo $portfolio['Portfolio']['slug']; ?>">
- 					<i class="fa fa-google hidden-xs " style="color:#fff;"></i> <span class="">GOOGLE+</span>
+ 					<i class="icon-gplus hidden-xs " style="color:#fff;"></i> <span class="">GOOGLE+</span>
  				</button>
  			</div>
 	</div>

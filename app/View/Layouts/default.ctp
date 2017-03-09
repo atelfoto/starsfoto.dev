@@ -28,7 +28,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 		//echo $this->Html->css('app');
-		echo $this->Html->css('styles');
+		echo $this->Html->css('styles.min');
 		//echo $this->Html->script(array('jquery-1.11.3.min','app'));
 		echo $this->fetch('meta');
 	//	echo $this->fetch('script');
@@ -52,8 +52,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<?php echo $this->element('slider') ?>
 					</ul>
 					<?php echo $this->Flash->render(); ?>
-					<?php echo $this->fetch('content'); ?>
-					<div id='container_footer'></div>
+					<div class="main">
+						<?php echo $this->fetch('content'); ?>
+					</div>
+					<div id='container_footer' style="height: 100px;"></div>
 				</div>
 				<footer id="footer">Copyright &copy; 2014-<?php echo date('Y'); ?> <a href=""><?php echo env('HTTP_HOST'); ?> <?php echo $cakeVersion; ?></a>
 				</footer>

@@ -9,8 +9,19 @@ $couleur-bg: #2e7d32;
 $couleur-dark: lighten(rgb(0,0,0),30%);
 $couleur-grey:  rgb(153,153,153);
 $couleur-light: transparentize($couleur-grey, 0.8);
-$couleur-white: white; 
+$couleur-white: white;
 
 //dimension menu
 
 $menu-width: 250px !default;
+
+// .clearfix() {
+//   &:before,
+//   &:after {
+//     content: " ";
+//     display: table;
+//   }
+//   &:after {
+//     clear: both;
+//   }
+// }
