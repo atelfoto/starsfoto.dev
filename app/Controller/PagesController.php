@@ -33,38 +33,86 @@ class PagesController extends AppController {
  * [$components description]
  * @var array
  */
-	public $components = array('Paginator', 'Flash', 'Session');
+	public $components = array('Paginator', 'Flash', 'Session','RequestHandler');
 /**
  * This controller  use models Post and User
  *
  * @var array
  */
-	public $uses = array('Post','User');
-
-	public function index(){
-		$d['pages']= $this->Post->find('all',array(
-			'conditions'=> array('ref'=>'page',"Post.name"=>'inicio'
-				)));
-		$this->set($d);
-	}
-	public function servicios(){
-		$d['pages']= $this->Post->find('all',array(
-			'conditions'=> array('ref'=>'page',"Post.name"=>'servicios'
-				)));
-		$this->set($d);
-	}
-	public function legalinformation(){
-		$d['pages']= $this->Post->find('all',array(
-			'conditions'=> array('ref'=>'page',"Post.name"=>'legalinformations'
-				)));
-		$this->set($d);
-	}
-	public function sitemap(){
-		$d['pages']= $this->Post->find('all',array(
-			'conditions'=> array('ref'=>'page',"Post.name"=>'sitemaps'
-				)));
-		$this->set($d);
-	}
+public $uses = array('Post','User');
+/**
+ * [index description]
+ * @return [type] [description]
+ */
+public function index(){
+	$d['pages']= $this->Post->find('all',array(
+		'conditions'=> array('ref'=>'page',"Post.name"=>'index'
+			)));
+	$this->set($d);
+}
+/**
+ * [servicios description]
+ * @return [type] [description]
+ */
+public function servicios(){
+	$d['pages']= $this->Post->find('all',array(
+		'conditions'=> array('ref'=>'page',"Post.name"=>'servicios'
+			)));
+	$this->set($d);
+}
+/**
+ * [legalinformation description]
+ * @return [type] [description]
+ */
+public function legalinformation(){
+	$d['pages']= $this->Post->find('all',array(
+		'conditions'=> array('ref'=>'page',"Post.name"=>'legalinformations'
+			)));
+	$this->set($d);
+}
+/**
+ * [sitemap description]
+ * @return [type] [description]
+ */
+public function sitemap(){
+	$this->loadModel('Portfolio');
+	$portfolios = $this->Portfolio->find('all', array(
+		'order' => array('Portfolio.created ASC'),
+		"conditions"=>array(
+			'online'=>1),
+		"fields"=>array(
+			'name',"created","slug")
+		));
+	$this->set(compact('portfolios'));
+	$d['pages']= $this->Post->find('all',array(
+		'conditions'=> array(
+			'ref'=>'page',
+			"Post.name"=>array('legalinformation',"servicios"),
+			"online"=>1,
+			)
+		)
+	);
+	$this->set($d);
+}
+/**
+ * [sitemapxml description]
+ * @return [type] [description]
+ */
+public function sitemapxml(){
+	$this->layout='ajax';
+	$this->RequestHandler->respondAs('xml');
+	$this->loadModel('Portfolio');
+	$listPortfolios = $this->Portfolio->find('all',array(
+		'conditions'=>array('online'=>1),
+		'order'=> array('Portfolio.modified'=>'Desc')
+		)
+	);
+	$this->loadModel('Post');
+	$listpages = $this->Post->find('all',array(
+		'conditions'=>array('online'=>1,"ref"=>'page','Post.name'=>array("legalinformation","servicios")),
+		'order'=> array('Post.modified'=>'Desc')));
+	return $this->set(compact('listPortfolios',"listpages"));
+}
 
 /**
  * [view description]
@@ -85,46 +133,6 @@ class PagesController extends AppController {
 		$this->set($d);
 
 	}
-	public function contact(){
-
-	}
-
-// /**
-//  * Displays a view
-//  *
-//  * @return void
-//  * @throws NotFoundException When the view file could not be found
-//  *	or MissingViewException in debug mode.
-//  */
-// 	public function display() {
-// 		$path = func_get_args();
-
-// 		$count = count($path);
-// 		if (!$count) {
-// 			return $this->redirect('/');
-// 		}
-// 		$page = $subpage = $title_for_layout = null;
-
-// 		if (!empty($path[0])) {
-// 			$page = $path[0];
-// 		}
-// 		if (!empty($path[1])) {
-// 			$subpage = $path[1];
-// 		}
-// 		if (!empty($path[$count - 1])) {
-// 			$title_for_layout = Inflector::humanize($path[$count - 1]);
-// 		}
-// 		$this->set(compact('page', 'subpage', 'title_for_layout'));
-
-// 		try {
-// 			$this->render(implode('/', $path));
-// 		} catch (MissingViewException $e) {
-// 			if (Configure::read('debug')) {
-// 				throw $e;
-// 			}
-// 			throw new NotFoundException();
-// 		}
-// 	}
 
 /**
  * [admin_index description]

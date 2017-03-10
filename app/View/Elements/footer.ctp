@@ -5,7 +5,7 @@
 		<li><?php  echo $this->Html->link( __('Contact Us'), array(
 			'controller' => 'contacts', 'action' => 'index')); ?> |
 		</li>
-		<li><?php  echo $this->Html->link(__("sitemap"), array('controller' => 'sitemaps', 'action' => 'index')); ?>
+		<li><?php  echo $this->Html->link(__("sitemap"), array('controller' => 'pages', 'action' => 'sitemap')); ?>
 		</li>
 	</ul>
 	<address id="hcard-starsfoto" itemscope itemtype="http://schema.org/Person" class="vcard">
@@ -24,8 +24,9 @@
 		<p>
 			<i class="copyright">Copyright &copy; 2005-<?php echo date('Y'); ?>  by
 				<span class="url" itemprop="url">
-					<a href="<?php echo env('HTTP_HOST'); ?>"><?php echo env('HTTP_HOST'); ?></a>
+					<?php echo $this->Html->link( env('HTTP_HOST'), array('controller' => 'pages', 'action' => 'index','full_base'=>true)); ?>
 				</span> &nbsp; all rights reserved.
 			</i>
 		</p>
 	</address>
+

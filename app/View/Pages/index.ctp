@@ -28,7 +28,7 @@ echo $this->Html->meta(array('name'=>'twitter:image','content'=>"http://".env('H
 	<?php echo $page['Post']['content'] ?>
 </div>
 <?php endforeach ?>
-<div id="map" class="map " style="height: 500px;padding-left: 0;padding-right: 0;"></div>
+<div id="map" class="map " style="height: 300px;margin-bottom: 15px;"></div>
 <div class="clearfix"></div>
 
 <?php echo $this->Html->script("https://maps.google.com/maps/api/js?key=AIzaSyB7l-WdKiQTz6zJB6131bqk3oVeS9p6HwA",array('inline'=>false)); ?>
@@ -44,12 +44,13 @@ zoom: 15,
 // Arrete le scroll avec la souris
 scrollwheel: false,
 streetViewControl: true,
+fullscreenControl: true,
 // zoomControl: false,
 // mapTypeId: google.maps.MapTypeId.HYBRID
 };
 var marker = new google.maps.Marker({
 position: myLocation,
-title: "Les Maraîchers de la Coudraie"
+title: "stars foto"
 });
 var map = new google.maps.Map(document.getElementById("map"),
 mapOptions);

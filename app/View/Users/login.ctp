@@ -37,11 +37,11 @@
 					));?>
 				<?php echo $this->Form->input('password', array('class' => 'form-control',
 					'placeholder' => __('password'),"type"=>"email",
-					'between'=>'<div class="input-group"><div class="input-group-addon"><i class="icon-password">&nbsp;</i></div>'
+					'between'=>'<div class="input-group"><div class="input-group-addon"><i class="icon-lock">&nbsp;</i></div>'
 					));?>
 			</fieldset>
 			<button  type="submit" class="btn btn-primary btn-lg btn-block"> <?= __('Login'); ?></button>
 				<?= $this->Form->end(); ?>
-	</div>			
+	</div>
 </div>
 <div class="clearfix" style="padding-bottom: 25px;"></div>
