@@ -1,6 +1,16 @@
 <?php  echo $this->assign('title', __('home'));
-echo $this->Html->meta('canonical', 'http:www.//'.env("HTTP_HOST"), array('rel'=>'canonical', 'type'=>null, 'title'=>null, 'inline' => false)
+echo $this->Html->meta('canonical', 'http://www.'.env("HTTP_HOST"), array('rel'=>'canonical', 'type'=>null, 'title'=>null, 'inline' => false)
 );
+?>
+<?php // echo $this->Html->meta(array('name' => 'robots','content' => $menus['Menu']['robots']),NULL,array('inline'=>false));
+$this->Html->meta(array('property' => 'og:type', 'type' => 'meta', 'content' => "website" ),NULL,array("inline"=>false));
+$this->Html->meta(array('property' => 'og:title', 'type' => 'meta', 'content' => "Site officiel de starsfoto" ),NULL,array("inline"=>false));
+$this->Html->meta(array('property' => 'og:url', 'type' => 'meta', 'content' => "http://www.".env('HTTP_HOST')),NULL,array("inline"=>false));
+$this->Html->meta(array('property' => 'og:image', 'type' => 'meta', 'content' => "http://www.".env('HTTP_HOST')."/img/screenshoot/screenshoot.jpg" ),NULL,array("inline"=>false));
+echo $this->Html->meta(array('name'=>'twitter:card','content'=>"summary_large_image"),NULL,array('inline'=>false));
+echo $this->Html->meta(array('name'=>'twitter:title','content'=>"Site officiel de starsfoto"),NULL,array('inline'=>false));
+echo $this->Html->meta(array('name'=>'twitter:url','content'=>"http://".env('HTTP_HOST')),NULL,array('inline'=>false));
+echo $this->Html->meta(array('name'=>'twitter:image','content'=>"http://".env('HTTP_HOST')."/img/screenshoot/screenshoot.jpg"),NULL,array('inline'=>false));
 ?>
 
 <div class="page-header">
@@ -9,7 +19,11 @@ echo $this->Html->meta('canonical', 'http:www.//'.env("HTTP_HOST"), array('rel'=
 	 	marbella
 	 </small>
 </div>
-<?php foreach ($pages as $page): ?>
+<?php foreach ($pages as $page):
+ $this->Html->meta('description', $this->Text->truncate(ltrim(strip_tags($page['Post']['content'])), 160), array('inline' => false));
+ $this->Html->meta(array('property' => 'og:description', 'type' => 'meta', 'content' => $this->Text->truncate(ltrim(strip_tags( $page['Post']['content'])), 200)),NULL,array("inline"=>false));
+ echo $this->Html->meta(array('name' => 'twitter:description','content'=> $this->Text->truncate(ltrim(strip_tags($page['Post']['content'])), 160)),NULL,array("inline"=>false));
+ ?>
 <div class="home">
 	<?php echo $page['Post']['content'] ?>
 </div>
@@ -28,9 +42,9 @@ var mapOptions = {
 center: myLocation,
 zoom: 15,
 // Arrete le scroll avec la souris
-					scrollwheel: false,
-					streetViewControl: true,
-//				zoomControl: false,
+scrollwheel: false,
+streetViewControl: true,
+// zoomControl: false,
 // mapTypeId: google.maps.MapTypeId.HYBRID
 };
 var marker = new google.maps.Marker({

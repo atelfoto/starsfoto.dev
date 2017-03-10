@@ -49,13 +49,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<div class="site-content" >
 				<div class="container" id="container">
 					<ul class="bxslider">
-						<?php echo $this->element('slider') ?>
+						<?php  echo $this->element('slider') ?>
 					</ul>
 					<?php echo $this->Flash->render(); ?>
 					<div class="main">
 						<?php echo $this->fetch('content'); ?>
 					</div>
-					<div id='container_footer' style="height: 150px;"></div>
+					<div id='container_footer' ></div>
 				</div>
 				<footer class="footer text-center" id="footer">
 				<?php echo $this->element('footer') ?>

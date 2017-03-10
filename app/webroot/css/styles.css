@@ -1529,27 +1529,6 @@ input[type="button"].btn-block {
 }
 
 /* '.' */
-html, body {
-  height: 100%;
-}
-
-#container {
-  clear: both;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -150px;
-}
-#container #container_footer {
-  height: 150px;
-}
-
-#footer {
-  clear: both;
-  position: relative;
-  height: 150px;
-}
-
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1657,11 +1636,29 @@ footer {
   text-align: center;
   color: white;
 }
+footer ul {
+  display: block;
+  margin-top: 1px;
+  padding-left: 0px;
+}
+footer ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+footer address {
+  line-height: 1em;
+}
+footer address small span[itemprop="name"] {
+  letter-spacing: 0.8em;
+}
 footer p {
   padding: 5px;
   font-size: .8em;
   font-weight: 400;
   font-style: italic;
+  line-height: .9em;
 }
 
 /*------------------------------------*\
@@ -1684,6 +1681,27 @@ footer p {
     $RESPONSIVE
 \*------------------------------------*/
 @media only screen and (max-width: 768px) {
+  html, body {
+    height: 100%;
+  }
+
+  #container {
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -205px;
+  }
+  #container #container_footer {
+    height: 205px;
+  }
+
+  #footer {
+    clear: both;
+    position: relative;
+    height: 205px;
+  }
+
   .site-container {
     height: 100%;
   }
@@ -1770,11 +1788,36 @@ footer p {
     background-color: rgba(0, 0, 0, 0.6);
   }
 
+  div.page-header h1, div.page-header h2 {
+    letter-spacing: 0.4em;
+  }
+
   #ContactIndexForm label, #ContactIndexForm p {
     visibility: hidden;
   }
 }
 @media (min-width: 970px) {
+  html, body {
+    height: 100%;
+  }
+
+  #container {
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -165px;
+  }
+  #container #container_footer {
+    height: 165px;
+  }
+
+  #footer {
+    clear: both;
+    position: relative;
+    height: 165px;
+  }
+
   body {
     background: url(../img/canvas.png);
   }
@@ -1877,6 +1920,25 @@ footer p {
     color: #f00;
   }
 
+  #UserLoginForm {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  #UserLoginForm label {
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  #UserLoginForm .input-group, #UserLoginForm span.help-block.text-danger {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  #UserLoginForm span.help-block.text-danger {
+    color: red;
+  }
+
   .well {
     min-height: 20px;
     padding: 19px;
@@ -1900,5 +1962,10 @@ footer p {
   .well-sm {
     padding: 9px;
     border-radius: 3px;
+  }
+
+  footer {
+    border-top: 2px solid #f00;
+    box-shadow: 0px -4px 13px 0px rgba(50, 50, 50, 0.75);
   }
 }

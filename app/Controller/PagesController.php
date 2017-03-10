@@ -53,6 +53,19 @@ class PagesController extends AppController {
 				)));
 		$this->set($d);
 	}
+	public function legalinformation(){
+		$d['pages']= $this->Post->find('all',array(
+			'conditions'=> array('ref'=>'page',"Post.name"=>'legalinformations'
+				)));
+		$this->set($d);
+	}
+	public function sitemap(){
+		$d['pages']= $this->Post->find('all',array(
+			'conditions'=> array('ref'=>'page',"Post.name"=>'sitemaps'
+				)));
+		$this->set($d);
+	}
+
 /**
  * [view description]
  * @param  [type] $slug [description]

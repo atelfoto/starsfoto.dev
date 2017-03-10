@@ -28,6 +28,9 @@
 	Router::parseExtensions('rss',"html",'json');
 	Router::connect('/',array('controller'=>'pages','action'=>'index'));
 	Router::connect('/servicios',array('controller'=>'pages','action'=>'servicios'));
+	Router::connect('/menciones-legales',array('controller'=>'pages','action'=>'legalinformation'));
+	Router::connect('/mapa-del-sitio',array('controller'=>'pages','action'=>'sitemap'));
+	Router::connect('/sitemap.xml', array('controller' => 'pages', 'action' => 'sitemapxml','ext'=>"xml"));
 	Router::connect('/pages/:slug',array('controller'=>'pages','action'=>'view'),array('pass'=>array('slug'),'slug'=>'[a-z0-9\-]+'));
 
 	Router::connect('/contact', array('controller' => 'contacts', 'action' => 'index'));

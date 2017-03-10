@@ -1,4 +1,5 @@
 @media only screen and(max-width: 768px){
+	@include sticky-footer(205px, "#container", "#container_footer", "#footer");
 	.site-container,
 	//site-puscher
 	{
@@ -82,7 +83,9 @@
 		}
 
 	}
-
+div.page-header h1, div.page-header h2 {
+    letter-spacing: 0.4em;
+}
 	#ContactIndexForm{
 		label, p{
 			visibility: hidden;
